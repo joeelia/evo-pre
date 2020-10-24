@@ -6,19 +6,19 @@ if (typeof Storage !== 'undefined') { // eslint-disable-line
 }
 
 const palette = {
-  fresh: {
-    primary: colors.lightBlue.base, // primary main
-    primarylight: colors.lightBlue.lighten4, // primary light
-    primarydark: colors.lightBlue.darken4, // primary dark
-    secondary: colors.green.base, // secondary main
-    secondarylight: colors.green.lighten4, // secondary light
-    secondarydark: colors.green.darken4, // secondary dark
+  passion: {
+    primary: colors.pink.base, // primary main
+    primarylight: colors.pink.lighten4, // primary light
+    primarydark: colors.pink.darken4, // primary dark
+    secondary: colors.indigo.accent2, // secondary main
+    secondarylight: colors.indigo.lighten4, // secondary light
+    secondarydark: colors.indigo.darken4, // secondary dark
     anchor: colors.blue.base // link
   }
 }
 
 export const theme = {
-  ...palette.fresh
+  ...palette.passion
 }
 
 export default {

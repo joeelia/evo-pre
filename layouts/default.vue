@@ -21,20 +21,11 @@ export default {
   loading: false,
   data() {
     return {
-      show: false
+      show: true
     }
   },
   mounted: function() {
     // Preloader and Progress bar setup
-    this.show = true
-    this.$nextTick(() => {
-      setTimeout(() => this.$nuxt.$loading.finish(), 500)
-      this.$nuxt.$loading.start()
-    })
-    const preloader = document.getElementById('preloader')
-    if (preloader !== null || undefined) {
-      preloader.remove()
-    }
     // RTL initial
     const rtlURL = document.location.pathname.split('/')[1] === 'ar'
     this.$vuetify.rtl = rtlURL
