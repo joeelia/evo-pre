@@ -1,27 +1,20 @@
-# `medical-theme`
+# evo-body-image
 
-> TODO: description
+## Build Setup
 
-## Installation
+```bash
+# install dependencies
+$ yarn install
 
-```
-lerna bootstrap
-```
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-## Run Development
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-```
-npm run dev
-```
-
-## Build
-
-```
-npm run build
+# generate static project
+$ yarn generate
 ```
 
-## Run Production
-
-```
-npm start
-```
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
