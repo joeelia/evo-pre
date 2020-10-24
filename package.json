@@ -8,10 +8,13 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "prettier:format-all": "prettier --write \"**/*.{vue,scss,sass,js,json}\"",
+    "prettier:check": "prettier \"**/*.{vue,scss,sass,js,json}\" --list-different"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.0",
+    "@tailwindcss/ui": "^0.6.2",
     "nuxt": "^2.14.0"
   },
   "devDependencies": {
