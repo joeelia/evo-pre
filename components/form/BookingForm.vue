@@ -41,7 +41,57 @@
           </div>
 
           <!--Body-->
-          <flow-form :questions="questions" />
+          <flow-form
+            ref="flowform"
+            v-bind:questions="questions"
+            v-bind:standalone="true"
+          >
+            <!-- Custom content for the Complete/Submit screen slots in the FlowForm component -->
+            <!-- We've overriden the default "complete" slot content -->
+            <template v-slot:complete>
+              <div class="f-section-wrap">
+                <p>
+                  <span class="fh2">Review Appointment Details</span>
+                  <span class="f-section-text">
+                    Great work, one last step before we can see you. Please
+                    confirm the following:
+                    <li
+                      class="font-bold"
+                      v-for="item in questions"
+                      :key="item.id"
+                    >
+                      {{ item.title }} : {{ item.answer }}
+                    </li>
+                  </span>
+                </p>
+                <p class="f-description">
+                  Note: An Email / SMS notification will be sent to you on
+                  confirmation.
+                </p>
+              </div>
+            </template>
+
+            <!-- We've overriden the default "completeButton" slot content -->
+            <template v-slot:completeButton>
+              <div class="f-submit" v-if="!submitted">
+                <button
+                  class="o-btn-action"
+                  ref="button"
+                  type="submit"
+                  href="#"
+                  v-on:click.prevent="$emit('show-booking-form', false)"
+                  aria-label="Press to submit"
+                >
+                  <span>Submit</span>
+                </button>
+                <a class="f-enter-desc" href="#"> </a>
+              </div>
+
+              <p class="text-success" v-if="submitted">
+                Submitted succesfully.
+              </p>
+            </template>
+          </flow-form>
         </div>
       </div>
     </div>
@@ -63,6 +113,7 @@ export default {
   },
   data() {
     return {
+      submitted: false,
       questions: [
         // QuestionModel array
         new QuestionModel({
@@ -87,18 +138,6 @@ export default {
           ],
         }),
         new QuestionModel({
-          title: 'Provider',
-          type: QuestionType.MultipleChoice,
-          options: [
-            new ChoiceOption({
-              label: 'Dr. Elia, MD',
-            }),
-            new ChoiceOption({
-              label: 'Heather Elia, RND',
-            }),
-          ],
-        }),
-        new QuestionModel({
           title: 'Date',
           type: QuestionType.MultipleChoice,
           options: [
@@ -107,6 +146,9 @@ export default {
             }),
             new ChoiceOption({
               label: 'Tomorrow',
+            }),
+            new ChoiceOption({
+              label: 'Next Week',
             }),
           ],
         }),

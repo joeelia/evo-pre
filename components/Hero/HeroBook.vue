@@ -9,19 +9,14 @@
       class="leading-none rounded-l-lg flex flex-wrap md:flex-no-wrap sm:justify-center lg:justify-start"
     >
       <CustomSelect
-        class="w-full md:w-1/3"
+        class="w-full md:flex-1"
         title="Service"
         :options="['Weight Loss', 'PRP', 'Botox', 'Fillers']"
       />
       <CustomSelect
-        class="w-full md:w-1/3"
-        title="Provider"
-        :options="['Dr. Elia, M.D', 'Heather Elia, RND']"
-      />
-      <CustomSelect
-        class="w-full md:w-1/3"
+        class="w-full md:flex-1"
         title="Date"
-        :options="['Tomorrow']"
+        :options="['ASAP', 'Tomorrow', 'Next Week']"
       />
       <button
         class="hidden font-bold md:block bg-pink-500 text-white px-8 rounded-r-lg transition hover:bg-blue-400 focus:bg-blue-400"
