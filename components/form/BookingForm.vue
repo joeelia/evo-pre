@@ -41,7 +41,7 @@
           </div>
 
           <!--Body-->
-          <flow-form v-bind:questions="questions" />
+          <flow-form :questions="questions" />
         </div>
       </div>
     </div>

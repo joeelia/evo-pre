@@ -2,8 +2,8 @@
 <template>
   <div class="">
     <BookingForm
-      @show-booking-form="showBookingForm = value"
       v-if="showBookingForm"
+      @show-booking-form="showBookingForm = value"
     />
     <div
       class="leading-none rounded-l-lg flex flex-wrap md:flex-no-wrap sm:justify-center lg:justify-start"

@@ -8,17 +8,17 @@
         <div class="lg:w-0 lg:flex-1">
           <Logo />
         </div>
-        <div class="mb-1 md:hidden" v-click-outside="hideMobile">
+        <div v-click-outside="hideMobile" class="mb-1 md:hidden">
           <div
             id="nav-toggle"
-            @click="showMobileMenu = !showMobileMenu"
             class="relative z-50 mr-10"
-            v-bind:class="{ active: showMobileMenu }"
+            :class="{ active: showMobileMenu }"
+            @click="showMobileMenu = !showMobileMenu"
           >
             <span></span>
           </div>
         </div>
-        <nav class="hidden md:flex space-x-10" v-click-outside="hideDesktop">
+        <nav v-click-outside="hideDesktop" class="hidden md:flex space-x-10">
           <nuxt-link
             to="/about"
             class="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
@@ -28,11 +28,11 @@
           <div class="relative">
             <button
               type="button"
+              class="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
               @click="
                 showServices = !showServices
                 showBlog = false
               "
-              class="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
             >
               <span>Services</span>
 
