@@ -48,7 +48,7 @@
             </div>
           </div>
           <div
-            class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
+            class="hidden lg:block mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
           >
             <svg class="w-64 h-64">
               <!--<circle cx="50" cy="50" r="50" />-->
