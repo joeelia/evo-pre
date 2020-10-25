@@ -5,7 +5,13 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
-  theme: {},
+  theme: {
+    extend: {
+      fontFamily: {
+        exo: ['"Exo 2"', 'Helvetica', 'Arial', 'sans-serif'],
+      },
+    },
+  },
   variants: {},
   plugins: [require('@tailwindcss/ui')],
   purge: {

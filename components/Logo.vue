@@ -1,5 +1,12 @@
+/* eslint-disable */
 <template>
-  <span class="leading-3 w-1 break-normal"> EVO BODY IMAGE </span>
+  <nuxt-link class="cursor-pointer" to="/">
+    <span
+      class="font-exo bg-gradient-to-r text-transparent bg-clip-text from-purple-400 to-pink-500 hover:from-pink-500 hover:to-purple-400 font-black text-3xl leading-3"
+    >
+      EVO BODY IMAGE
+    </span>
+  </nuxt-link>
 </template>
 
 <style>
