@@ -36,9 +36,7 @@
               for Weightloss and overall body improvement. Exerpinced Medical
               Professionals on staff, for every need.
             </p>
-            <div
-              class="mt-5 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0"
-            >
+            <div class="mt-5 lg:text-left lg:mx-0">
               <p class="text-base font-medium text-gray-900">
                 Sign up to get notified when it’s ready.
               </p>

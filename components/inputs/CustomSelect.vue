@@ -30,7 +30,7 @@
           :class="[
             expanded
               ? 'focus:outline-none'
-              : 'focus:outline-none focus:shadow-outline-pink focus:border-pink-300',
+              : 'focus:outline-none focus:shadow-outline-pink focus:border-pink-200',
           ]"
           class="relative w-full py-2 pl-3 pr-10 text-left transition duration-150 ease-in-out bg-white cursor-default sm:text-sm sm:leading-5"
           @click.prevent="toggleSelect"
@@ -80,7 +80,7 @@
           >
             <!--
             Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
-            Highlighted: "text-white bg-pink-600", Not Highlighted: "text-gray-900"
+            Highlighted: "text-white bg-pink-300", Not Highlighted: "text-gray-900"
           -->
             <li
               v-for="(option, o) in options"
@@ -88,7 +88,7 @@
               :key="option"
               :tabindex="o"
               :class="
-                highlighted === o ? 'text-white bg-pink-600' : 'text-gray-900'
+                highlighted === o ? 'text-white bg-pink-400' : 'text-gray-900'
               "
               role="option"
               :aria-selected="selected === option"
@@ -108,7 +108,7 @@
               <!--
               Checkmark, only display for selected option.
 
-              Highlighted: "text-white", Not Highlighted: "text-pink-600"
+              Highlighted: "text-white", Not Highlighted: "text-blue-600"
             -->
               <span
                 v-if="selected === option"
