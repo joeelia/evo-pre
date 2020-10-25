@@ -20,7 +20,7 @@
         :options="['Tomorrow']"
       />
       <button
-        class="hidden md:block bg-pink-500 text-white px-8 rounded-r-lg transition hover:bg-blue-dark focus:bg-blue-dark"
+        class="hidden font-bold md:block bg-pink-500 text-white px-8 rounded-r-lg transition hover:bg-blue-400 focus:bg-blue-400"
       >
         Book Now
       </button>
@@ -29,7 +29,7 @@
       class="leading-none md:hidden rounded-l-lg sm:flex-wrap md:flex justify-center"
     >
       <button
-        class="block md:hidden bg-pink-500 py-4 w-full text-white px-8 rounded-b-lg transition hover:bg-blue-dark focus:bg-blue-dark"
+        class="block md:hidden bg-pink-500 py-4 w-full text-white px-8 rounded-b-lg transition hover:bg-blue-400 focus:bg-blue-400"
       >
         Book Now
       </button>

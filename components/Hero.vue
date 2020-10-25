@@ -10,9 +10,7 @@
       </svg>
     </div>
     <div class="relative pt-6 pb-16 md:pb-20 lg:pb-24 xl:pb-32">
-      <main
-        class="mt-8 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-20 xl:mt-24"
-      >
+      <main class="mt-8 mx-auto max-w-screen-xl px-4">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8">
           <div
             class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left"
@@ -56,7 +54,7 @@
               <!--<circle cx="50" cy="50" r="50" />-->
               <path d="M0,50 a1,1 0 0,0 100,0" fill="blue" />
             </svg>
-            <div class="relative mx-auto w-full lg:-mt-24 lg:max-w-md">
+            <div class="relative mx-auto w-full lg:-mt-14 lg:max-w-md">
               <img
                 class="w-full"
                 src="~/assets/images/hero-clean-face.png"
