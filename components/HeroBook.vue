@@ -1,6 +1,10 @@
 /* eslint-disable */
 <template>
   <div class="">
+    <BookingForm
+      @show-booking-form="showBookingForm = value"
+      v-if="showBookingForm"
+    />
     <div
       class="leading-none rounded-l-lg flex flex-wrap md:flex-no-wrap sm:justify-center lg:justify-start"
     >
@@ -21,6 +25,7 @@
       />
       <button
         class="hidden font-bold md:block bg-pink-500 text-white px-8 rounded-r-lg transition hover:bg-blue-400 focus:bg-blue-400"
+        @click="showBookingForm = true"
       >
         Book Now
       </button>
@@ -30,9 +35,21 @@
     >
       <button
         class="block md:hidden bg-pink-500 py-4 w-full text-white px-8 rounded-b-lg transition hover:bg-blue-400 focus:bg-blue-400"
+        @click="showBookingForm = true"
       >
         Book Now
       </button>
     </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'HeroBook',
+  data() {
+    return {
+      showBookingForm: false,
+      value: false,
+    }
+  },
+}
+</script>
