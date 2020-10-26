@@ -1,26 +1,26 @@
 <template>
   <transition
     enter-active-class="duration-200 ease-out"
-    enter-class="opacity-0 scale-95"
-    enter-to-class="opacity-100 scale-100"
+    enter-class="scale-95 opacity-0"
+    enter-to-class="scale-100 opacity-100"
     leave-active-class="duration-200 ease-in"
-    leave-class="opacity-100 scale-100"
-    leave-to-class="opacity-0 scale-95"
+    leave-class="scale-100 opacity-100"
+    leave-to-class="scale-95 opacity-0"
   >
     <div
-      class="z-50 modal fixed w-full h-full top-0 left-0 flex items-center justify-center"
+      class="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full modal"
     >
       <div
-        class="modal-overlay absolute w-full h-full bg-white opacity-95"
+        class="absolute w-full h-full bg-white modal-overlay opacity-95"
       ></div>
 
-      <div class="modal-container fixed w-full h-full z-50 overflow-y-auto">
+      <div class="fixed z-50 w-full h-full overflow-y-auto modal-container">
         <div
-          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50"
+          class="absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-black cursor-pointer modal-close"
           @click="$emit('show-booking-form', false)"
         >
           <svg
-            class="fill-current text-black"
+            class="text-black fill-current"
             xmlns="http://www.w3.org/2000/svg"
             width="18"
             height="18"
@@ -34,10 +34,10 @@
         </div>
 
         <!-- Add margin if you want to see grey behind the modal-->
-        <div class="modal-content container mx-auto h-auto text-left p-4">
+        <div class="container h-auto p-4 mx-auto text-left modal-content">
           <!--Title-->
-          <div class="flex justify-between items-center pb-2">
-            <p class="text-2xl font-exo font-bold">Book Your Appointment</p>
+          <div class="flex items-center justify-between pb-2">
+            <p class="text-2xl font-bold font-exo">Book Your Appointment</p>
           </div>
 
           <!--Body-->
@@ -49,17 +49,13 @@
             <!-- Custom content for the Complete/Submit screen slots in the FlowForm component -->
             <!-- We've overriden the default "complete" slot content -->
             <template v-slot:complete>
-              <div class="f-section-wrap">
+              <div class="text-black f-section-wrap">
                 <p>
                   <span class="fh2">Review Appointment Details</span>
                   <span class="f-section-text">
                     Great work, one last step before we can see you. Please
                     confirm the following:
-                    <li
-                      class="font-bold"
-                      v-for="item in questions"
-                      :key="item.id"
-                    >
+                    <li class="" v-for="item in questions" :key="item.id">
                       {{ item.title }} : {{ item.answer }}
                     </li>
                   </span>
