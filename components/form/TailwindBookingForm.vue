@@ -56,19 +56,21 @@
             <h2 class="mb-2 text-xl text-center text-gray-800">Appointment</h2>
             <div class="flex flex-wrap -mx-1">
               <div class="relative h-full">
-                <VueTailWindPicker
-                  class="absolute inset-0"
-                  formatDate="MM-DD-YY"
-                  formatDisplay="MM-DD-YY"
-                  :init="true"
-                  @change="(v) => (value = v)"
-                >
-                  <input
-                    v-model="value"
-                    class="py-4 text-base text-center text-gray-800 bg-orange-200 rounded cursor-pointer hover:bg-orange-300"
-                    placeholder="Example initial value"
-                  />
-                </VueTailWindPicker>
+                <client-only>
+                  <VueTailWindPicker
+                    class="absolute inset-0"
+                    formatDate="MM-DD-YY"
+                    formatDisplay="MM-DD-YY"
+                    :init="true"
+                    @change="(v) => (value = v)"
+                  >
+                    <input
+                      v-model="value"
+                      class="py-4 text-base text-center text-gray-800 bg-orange-200 rounded cursor-pointer hover:bg-orange-300"
+                      placeholder="Example initial value"
+                    />
+                  </VueTailWindPicker>
+                </client-only>
               </div>
               <div
                 v-for="(appointment, index) in appointments"
@@ -112,13 +114,12 @@
 <script>
 import { FormWizard, TabContent } from 'vue-form-wizard'
 import 'vue-form-wizard/dist/vue-form-wizard.min.css'
-import VueTailwindPicker from 'vue-tailwind-picker'
 
 export default {
   components: {
     FormWizard,
     TabContent,
-    VueTailwindPicker,
+    VueTailWindPicker: () => import('vue-tailwind-picker'),
   },
   data() {
     return {
