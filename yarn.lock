@@ -9536,6 +9536,13 @@ vue-client-only@^2.0.0:
   resolved "https://registry.yarnpkg.com/vue-client-only/-/vue-client-only-2.0.0.tgz#ddad8d675ee02c761a14229f0e440e219de1da1c"
   integrity sha512-arhk1wtWAfLsJyxGMoEYhoBowM87/i6HLSG2LH/03Yog6i2d9JEN1peMP0Ceis+/n9DxdenGYZZTxbPPJyHciA==
 
+vue-date-pick@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/vue-date-pick/-/vue-date-pick-1.4.1.tgz#1a39723e14d45e5d23b31d850bcc0505e4e52fb9"
+  integrity sha512-x4PnXwfMWAWZQF4yctAhENSnQyZUt3+vV7mVravXgvijtwzQx7zoOicgzMPg/LNdzBQWxnOjAa7GvSAY98Hp8A==
+  dependencies:
+    vue "^2.6.0"
+
 vue-eslint-parser@^7.0.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.1.1.tgz#c43c1c715ff50778b9a7e9a4e16921185f3425d3"
@@ -9608,11 +9615,6 @@ vue-style-loader@^4.1.0:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue-tailwind-picker@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/vue-tailwind-picker/-/vue-tailwind-picker-1.1.5.tgz#d1e23eae879e37d532d83da825c3b6dae8512e9e"
-  integrity sha512-VdoecjVxGAG2gJZIawzmReIgrTWe/4VWELoa9LLFRTn6cXmm0AGNpbqYvINVTsblF5W67qcvZBDtng5fer4Cqg==
-
 vue-template-compiler@^2.6.12:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.6.12.tgz#947ed7196744c8a5285ebe1233fe960437fcc57e"
@@ -9638,7 +9640,7 @@ vue-the-mask@^0.11.1:
   resolved "https://registry.yarnpkg.com/vue-the-mask/-/vue-the-mask-0.11.1.tgz#91ee01008354ae57bccc79bb61b65f32d971d9d5"
   integrity sha512-UquSfnSWejD0zAfcD+3jJ1chUAkOAyoxya9Lxh9acCRtrlmGcAIvd0cQYraWqKenbuZJUdum+S174atv2AuEHQ==
 
-vue@^2.6.11, vue@^2.6.12:
+vue@^2.6.0, vue@^2.6.11, vue@^2.6.12:
   version "2.6.12"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.12.tgz#f5ebd4fa6bd2869403e29a896aed4904456c9123"
   integrity sha512-uhmLFETqPPNyuLLbsKz6ioJ4q7AZHzD8ZVFNATNyICSZouqP2Sz0rotWQC8UNBF6VGSCs5abnKJoStA6JbCbfg==

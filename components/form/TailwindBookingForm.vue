@@ -60,8 +60,8 @@
                   <date-picker
                     v-model="date"
                     mode="date"
-                    :timezone="timezone"
-                    :input-debounce="500"
+                    :available-dates="availableDates"
+                    :input-debounce="300"
                   >
                     <template v-slot="{ inputValue, inputEvents }">
                       <input
@@ -73,6 +73,7 @@
                   </date-picker>
                 </center>
               </div>
+              <p />
               <div
                 v-for="(appointment, index) in appointments"
                 v-bind:id="'appointment-' + appointment.id"
@@ -124,6 +125,18 @@ export default {
   data() {
     return {
       date: new Date(),
+      availableDates: [
+        {
+          start: null,
+          end: null,
+          weekdays: [2, 3],
+        },
+        {
+          start: null,
+          end: null,
+          weekdays: [4, 5, 6],
+        },
+      ],
       stepIndex: 0,
       services: [
         { id: 1, name: 'Weight Loss', selected: false },
