@@ -6,7 +6,7 @@
       @show-booking-form="showBookingForm = value"
     />
     <div
-      class="leading-none rounded-l-lg flex flex-wrap md:flex-no-wrap sm:justify-center lg:justify-start"
+      class="flex flex-wrap leading-none rounded-l-lg md:flex-no-wrap sm:justify-center lg:justify-start"
     >
       <CustomSelect
         class="w-full md:flex-1"
@@ -19,17 +19,17 @@
         :options="['ASAP', 'Tomorrow', 'Next Week']"
       />
       <button
-        class="hidden font-bold md:block bg-pink-500 text-white px-8 rounded-r-lg transition hover:bg-blue-400 focus:bg-blue-400"
+        class="hidden px-8 font-bold text-white transition bg-pink-500 rounded-r-lg md:block hover:bg-blue-400 focus:bg-blue-400"
         @click="showBookingForm = true"
       >
         Book Now
       </button>
     </div>
     <div
-      class="leading-none md:hidden rounded-l-lg sm:flex-wrap md:flex justify-center"
+      class="justify-center leading-none rounded-l-lg md:hidden sm:flex-wrap md:flex"
     >
       <button
-        class="block md:hidden bg-pink-500 py-4 w-full text-white px-8 rounded-b-lg transition hover:bg-blue-400 focus:bg-blue-400"
+        class="block w-full px-8 py-4 text-white transition bg-pink-500 rounded-b-lg md:hidden hover:bg-blue-400 focus:bg-blue-400"
         @click="showBookingForm = true"
       >
         Book Now

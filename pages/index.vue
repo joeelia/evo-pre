@@ -2,6 +2,7 @@
   <div>
     <Hero />
     <FeatureSection />
+    <TailwindBookingForm />
   </div>
 </template>
 

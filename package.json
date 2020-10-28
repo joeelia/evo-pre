@@ -16,8 +16,11 @@
     "@ditdot-dev/vue-flow-form": "^1.1.3",
     "@nuxtjs/axios": "^5.12.0",
     "@tailwindcss/ui": "^0.6.2",
+    "dayjs": "^1.9.4",
     "nuxt": "^2.14.0",
-    "v-click-outside": "^3.1.2"
+    "v-click-outside": "^3.1.2",
+    "vue-form-wizard": "^0.8.4",
+    "vue-tailwind-picker": "^1.1.5"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
