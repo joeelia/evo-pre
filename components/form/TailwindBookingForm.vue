@@ -112,12 +112,13 @@
 <script>
 import { FormWizard, TabContent } from 'vue-form-wizard'
 import 'vue-form-wizard/dist/vue-form-wizard.min.css'
+import VueTailwindPicker from 'vue-tailwind-picker'
 
 export default {
   components: {
     FormWizard,
     TabContent,
-    VueTailWindPicker: () => import('vue-tailwind-picker'),
+    VueTailwindPicker,
   },
   data() {
     return {
