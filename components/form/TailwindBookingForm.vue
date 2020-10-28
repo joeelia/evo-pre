@@ -56,21 +56,22 @@
             <h2 class="mb-2 text-xl text-center text-gray-800">Appointment</h2>
             <div class="flex flex-wrap -mx-1">
               <div class="relative h-full">
-                <client-only>
-                  <VueTailWindPicker
-                    class="absolute inset-0"
-                    formatDate="MM-DD-YY"
-                    formatDisplay="MM-DD-YY"
-                    :init="true"
-                    @change="(v) => (value = v)"
+                <center>
+                  <date-picker
+                    v-model="date"
+                    mode="date"
+                    :timezone="timezone"
+                    :input-debounce="500"
                   >
-                    <input
-                      v-model="value"
-                      class="py-4 text-base text-center text-gray-800 bg-orange-200 rounded cursor-pointer hover:bg-orange-300"
-                      placeholder="Example initial value"
-                    />
-                  </VueTailWindPicker>
-                </client-only>
+                    <template v-slot="{ inputValue, inputEvents }">
+                      <input
+                        class="px-2 py-1 bg-white border rounded"
+                        :value="inputValue"
+                        v-on="inputEvents"
+                      />
+                    </template>
+                  </date-picker>
+                </center>
               </div>
               <div
                 v-for="(appointment, index) in appointments"
@@ -119,10 +120,10 @@ export default {
   components: {
     FormWizard,
     TabContent,
-    VueTailWindPicker: () => import('vue-tailwind-picker'),
   },
   data() {
     return {
+      date: new Date(),
       stepIndex: 0,
       services: [
         { id: 1, name: 'Weight Loss', selected: false },
@@ -130,7 +131,16 @@ export default {
         { id: 3, name: 'Fillers', selected: false },
         { id: 4, name: 'PRP', selected: false },
       ],
-      appointments: [],
+      appointments: [
+        { id: 5, name: '11:20am', selected: false },
+        { id: 6, name: '12:30pm', selected: false },
+        { id: 7, name: '1:15pm', selected: false },
+        { id: 8, name: '2:45pm', selected: false },
+        { id: 9, name: '3:30pm', selected: false },
+        { id: 10, name: '3:45pm', selected: false },
+        { id: 11, name: '4:15pm', selected: false },
+        { id: 12, name: '5:00pm', selected: false },
+      ],
       data: [],
       value: '',
       email: '',
