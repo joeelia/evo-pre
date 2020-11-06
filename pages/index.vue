@@ -2,7 +2,8 @@
   <div>
     <Hero />
     <FeatureSection />
-    <TailwindBookingForm />
+    <TastefulTouch />
+    <!-- <TailwindBookingForm /> -->
   </div>
 </template>
 
