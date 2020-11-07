@@ -4,6 +4,7 @@
     <FeatureSection />
     <TastefulTouch />
     <!-- <TailwindBookingForm /> -->
+    <Services />
     <LightFooter />
   </div>
 </template>
