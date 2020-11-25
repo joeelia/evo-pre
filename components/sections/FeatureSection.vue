@@ -9,11 +9,11 @@
         class="relative flex flex-col items-start justify-center w-full mb-10 sm:w-5/6 sm:w-1/3 sm:mb-0 sm:pr-10"
       >
         <h2 class="mb-5 text-2xl font-black leading-tight xl:text-4xl">
-          Live Your Best Life
+          Live a better lifestyle, your way
         </h2>
         <p class="mb-8 text-base text-yellow-900 xl:text-xl md:max-w-lg">
-          Happy with your body now? Great, you can still consult with us to give
-          you extra pointers!
+          We have a variety of options to offer, ask us about our diet plans and
+          fat burning injections. Schedule a consultation now.
         </p>
         <a href="#_" class="relative">
           <span
@@ -30,7 +30,7 @@
       >
         <div class="overflow-hidden border-2 border-black rounded-lg">
           <img
-            src="https://cdn.devdojo.com/images/october2020/screenshot.png"
+            src="~/assets/images/healthy-super-foods.jpg"
             alt="Screen shot of Flare"
             class="object-cover w-full h-full"
           />

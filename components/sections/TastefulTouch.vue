@@ -1,6 +1,7 @@
 <template>
   <div
     class="relative flex w-full max-h-full py-20 pb-20 overflow-hidden bg-pink-500 md:pt-40 md:pb-64"
+    style="background-color: #f6aa86"
   >
     <svg
       class="absolute top-0 w-full text-pink-200 fill-current"
@@ -20,13 +21,12 @@
             <h1
               class="mb-10 -mr-12 text-2xl font-bold leading-tight text-white sm:-mr-20 sm:text-3xl md:text-4xl lg:text-5xl"
             >
-              Tasteful Touch,<br />
-              Everytime.
+              Beauty is in the eye of the beholder,<br />
+              grab a mirror.
             </h1>
             <p class="mb-10 lg:pl-32">
-              With our award-winning weight-loss service, our personnel doctors
-              keep your safety in mind, the whole process is tracked and
-              recorded.
+              Our services can also help you meet your aesthetic needs and tweak
+              your perfect imperfections. Schedule an appointment now.
             </p>
             <a
               href="#"
@@ -39,7 +39,7 @@
       <div class="min-h-full">
         <img
           class="object-cover w-full h-full"
-          src="https://images.unsplash.com/photo-1559941727-6fb446e7e8ae?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=3936&h=2624&fit=crop&ixid=eyJhcHBfaWQiOjF9"
+          src="~/assets/images/beauty-mirror.jpg"
           alt="Food delivery worker on a bycicle"
         />
       </div>
