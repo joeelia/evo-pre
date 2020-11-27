@@ -35,7 +35,10 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: [{ src: '~/plugins/date-picker.js', mode: 'client' }],
+  plugins: [
+    { src: '~/plugins/date-picker.js', mode: 'client' },
+    { src: '~/plugins/aos.client', mode: 'client' },
+  ],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

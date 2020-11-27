@@ -1,5 +1,10 @@
 <template>
   <div
+    data-aos="fade"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease"
     class="relative flex w-full max-h-full py-20 pb-20 overflow-hidden bg-pink-500 md:pt-40 md:pb-64"
     style="background-color: #f6aa86"
   >
@@ -19,6 +24,11 @@
             class="max-w-xs p-4 text-sm text-right sm:max-w-xl sm:p-10 sm:text-base lg:max-w-2xl"
           >
             <h1
+              data-aos="fade"
+              data-aos-offset="400"
+              data-aos-delay="150"
+              data-aos-duration="2000"
+              data-aos-easing="ease"
               class="mb-10 -mr-12 text-2xl font-bold leading-tight text-white sm:-mr-20 sm:text-3xl md:text-4xl lg:text-5xl"
             >
               Beauty is in the eye of the beholder,<br />

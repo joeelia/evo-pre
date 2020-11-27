@@ -21,6 +21,7 @@
               Coming soon
             </div> -->
             <h2
+              data-aos="fade"
               class="mt-1 text-2xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none lg:text-3xl xl:text-4xl"
             >
               Do it for the after selfie, do it for
