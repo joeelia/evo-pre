@@ -26,8 +26,8 @@
             <h1
               data-aos="fade"
               data-aos-offset="400"
-              data-aos-delay="150"
-              data-aos-duration="2000"
+              data-aos-delay="50"
+              data-aos-duration="1000"
               data-aos-easing="ease"
               class="mb-10 -mr-12 text-2xl font-bold leading-tight text-white sm:-mr-20 sm:text-3xl md:text-4xl lg:text-5xl"
             >
@@ -48,6 +48,11 @@
       </div>
       <div class="min-h-full">
         <img
+          data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease"
           class="object-cover w-full h-full"
           src="~/assets/images/beauty-mirror.jpg"
           alt="Food delivery worker on a bycicle"
