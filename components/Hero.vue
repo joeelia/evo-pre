@@ -21,20 +21,16 @@
               Coming soon
             </div> -->
             <h2
-              class="mt-1 text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl"
+              class="mt-1 text-2xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none lg:text-3xl xl:text-4xl"
             >
-              Is making a lifestyle change easy?
-              <br class="hidden md:inline" />
-              <span class="text-indigo-600">No.</span>
+              Do it for the after selfie, do it for
+              <span style="color: #8e1a42">YOU.</span>
             </h2>
             <p
               class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
             >
-              We are a team of a physician and a dietitian who have come
-              together to provide a list of services that can help you achieve
-              your health, lifestyle and aesthetic goals. No one said it was
-              easy No one said it was impossible Schedule online or call us
-              today to set up an appointment.
+              Health and beauty go hand in hand. Let us, a physician and a
+              dietitian, help you achieve your lifestyle and aesthetic goals.
             </p>
             <div class="mt-5 lg:text-left lg:mx-0">
               <p class="text-base font-medium text-gray-900">

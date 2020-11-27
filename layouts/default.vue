@@ -1,11 +1,14 @@
 <template>
-  <div id="hero-background">
+  <div id="s-bg">
     <Nav />
     <Nuxt />
   </div>
 </template>
 
 <style>
+.s-bg {
+  background-color: #fff5f5;
+}
 #hero-background {
   background: linear-gradient(-45deg, rgb(239, 253, 255), rgb(253, 245, 255));
   background-size: 400% 400%;
