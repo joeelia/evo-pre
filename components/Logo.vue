@@ -7,28 +7,14 @@
       EVO BODY IMAGE
     </span> -->
     <svg
+      class="w-48 h-48 md:w-56 md:h-56"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       x="0px"
       y="0px"
       viewBox="0 0 1644.72 350"
-      class="w-48 h-48 md:w-56 md:h-56"
       xml:space="preserve"
     >
-      <style type="text/css">
-        .st0 {
-          fill: #8e1a42;
-        }
-        .st1 {
-          fill: #ffffff;
-        }
-        .st2 {
-          font-family: 'ArialRoundedMTBold';
-        }
-        .st3 {
-          font-size: 200px;
-        }
-      </style>
       <circle class="st0" cx="175" cy="175" r="175" />
       <g>
         <path
@@ -87,5 +73,18 @@
   0% {
     opacity: 0;
   }
+}
+
+.st0 {
+  fill: #8e1a42;
+}
+.st1 {
+  fill: #ffffff;
+}
+.st2 {
+  font-family: 'ArialRoundedMTBold';
+}
+.st3 {
+  font-size: 200px;
 }
 </style>
