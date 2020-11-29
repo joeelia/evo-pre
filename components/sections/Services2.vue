@@ -1,19 +1,21 @@
 <template>
   <section id="services" class="bg-purple-400">
     <div class="mx-auto max-w-340">
-      <h3 class="py-20 text-3xl font-bold text-center text-white">
+      <h3 class="py-8 text-3xl font-bold text-center text-white">
         Our Services
       </h3>
       <div class="px-10 pb-20 overflow-auto md:pb-2 lg:px-28 hide-scrollbar">
-        <div class="flex pt-16 md:grid md:grid-cols-3 xl:grid-cols-4 md:gap-4">
+        <div
+          class="flex pt-16 md:pt-8 md:grid md:grid-cols-3 xl:grid-cols-4 md:gap-4"
+        >
           <div
+            v-for="(service, i) in services"
+            :key="i"
             data-aos="fade"
-            data-aos-offset="400"
+            data-aos-offset="100"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease"
-            v-for="(service, i) in services"
-            :key="i"
             class="flex-shrink-0 w-64 px-5 mx-3 bg-pink-500 rounded-md md:mb-10 md:w-full"
           >
             <center>
