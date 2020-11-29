@@ -5,6 +5,7 @@
     <TastefulTouch />
     <!-- <TailwindBookingForm /> -->
     <Services />
+    <Services2 />
     <LightFooter />
   </div>
 </template>
