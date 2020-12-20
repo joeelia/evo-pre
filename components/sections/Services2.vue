@@ -19,16 +19,18 @@
             class="flex-shrink-0 w-64 px-5 mx-3 bg-pink-500 rounded-md cursor-pointer md:mb-10 md:w-full"
           >
             <center>
-              <cld-image
-                :public-id="service.image"
-                width="300"
-                height="169"
-                radius="30"
-                fetchFormat="auto"
-                quality="auto"
-                loading="lazy"
-                class="inline-block -mt-16 rounded-md md:-mt-4"
-              />
+              <XyzTransition appear xyz="fade rotate-right ease-out-back">
+                <cld-image
+                  :public-id="service.image"
+                  width="300"
+                  height="169"
+                  radius="30"
+                  fetchFormat="auto"
+                  quality="auto"
+                  loading="lazy"
+                  class="inline-block -mt-16 rounded-md md:-mt-4"
+                />
+              </XyzTransition>
               <!-- <img
                 :src="service.image"
                 width="300"
