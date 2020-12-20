@@ -1,8 +1,8 @@
 <template>
   <div
     data-aos="fade"
-    data-aos-offset="200"
-    data-aos-delay="50"
+    data-aos-offset="380"
+    data-aos-delay="20000"
     data-aos-duration="1000"
     data-aos-easing="ease"
     class="relative flex w-full max-h-full py-20 pb-20 overflow-hidden bg-pink-500 md:pt-40 md:pb-64"
@@ -25,7 +25,7 @@
           >
             <h1
               data-aos="fade"
-              data-aos-offset="400"
+              data-aos-offset="200"
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease"
@@ -47,7 +47,19 @@
         </div>
       </div>
       <div class="min-h-full">
-        <img
+        <cld-image
+          data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease"
+          public-id="v1608498254/assets/beauty-mirror_rxiryt"
+          fetchFormat="auto"
+          quality="auto"
+          loading="lazy"
+          class="object-cover w-full h-full"
+        />
+        <!-- <img
           data-aos="flip-left"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -56,7 +68,7 @@
           class="object-cover w-full h-full"
           src="~/assets/images/beauty-mirror.jpg"
           alt="Food delivery worker on a bycicle"
-        />
+        /> -->
       </div>
     </section>
     <svg

@@ -9,7 +9,7 @@
         <path d="M0,50 a1,1 0 0,0 100,0" fill="blue" />
       </svg>
     </div>
-    <div class="relative pt-6 pb-16 md:pb-20 lg:pb-24 xl:pb-32">
+    <div class="relative pt-6 pb-16 lg:mb-64 md:pb-20 lg:pb-24 xl:pb-32">
       <main class="max-w-screen-xl px-4 mx-auto mt-8">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8">
           <div
@@ -21,7 +21,6 @@
               Coming soon
             </div> -->
             <h2
-              data-aos="fade"
               class="mt-1 text-2xl font-extrabold leading-10 tracking-tight text-gray-900 sm:leading-none lg:text-3xl xl:text-4xl"
             >
               Do it for the after selfie, do it for
@@ -63,11 +62,22 @@
             <div
               class="container relative w-full h-full xl:max-w-6xl lg:w-screen"
             >
-              <img
+              <cld-image
+                public-id="v1608498604/assets/hero-shower-lips_byucfc"
+                fetchFormat="auto"
+                radius="75"
+                width="500"
+                quality="auto"
+                loading="lazy"
+                class="absolute inset-y-0 right-0 -mt-10 rounded-xl"
+                alt="Girl with kissy lips with Botox injections"
+                style="height: 42rem"
+              />
+              <!-- <img
                 src="~/assets/images/hero-shower-lips.jpg"
                 class="absolute inset-y-0 right-0 -mt-10 rounded-xl"
                 style="height: 42rem"
-              />
+              /> -->
             </div>
           </div>
         </div>

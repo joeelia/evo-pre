@@ -29,11 +29,24 @@
         class="relative flex flex-col items-center justify-center w-full -mr-0 sm:w-5/6 sm:-mr-20"
       >
         <div class="overflow-hidden border-2 border-black rounded-lg">
-          <img
+          <cld-image
+            data-aos="flip-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease"
+            public-id="v1608498524/assets/healthy-super-foods_e8foii"
+            fetchFormat="auto"
+            quality="auto"
+            loading="lazy"
+            class="object-cover w-full h-full"
+            alt="Healthy Living"
+          />
+          <!-- <img
             src="~/assets/images/healthy-super-foods.jpg"
             alt="Screen shot of Flare"
             class="object-cover w-full h-full"
-          />
+          /> -->
         </div>
       </div>
     </div>

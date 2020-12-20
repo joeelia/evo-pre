@@ -57,12 +57,17 @@ export default {
   tailwindcss: {
     exposeConfig: true,
   },
+  cloudinary: {
+    cloudName: 'deck8xqmf',
+    useComponent: true,
+  },
   /*
    ** Nuxt.js modules
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/cloudinary',
   ],
   /*
    ** Axios module configuration

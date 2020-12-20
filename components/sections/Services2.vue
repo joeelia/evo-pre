@@ -19,12 +19,22 @@
             class="flex-shrink-0 w-64 px-5 mx-3 bg-pink-500 rounded-md cursor-pointer md:mb-10 md:w-full"
           >
             <center>
-              <img
+              <cld-image
+                :public-id="service.image"
+                width="300"
+                height="169"
+                radius="30"
+                fetchFormat="auto"
+                quality="auto"
+                loading="lazy"
+                class="inline-block -mt-16 rounded-md md:-mt-4"
+              />
+              <!-- <img
                 :src="service.image"
                 width="300"
                 height="169"
                 class="inline-block -mt-16 rounded-md md:-mt-4"
-              />
+              /> -->
             </center>
             <div class="mt-5 font-bold text-white">
               <h3>{{ service.title }}</h3>
@@ -50,74 +60,68 @@ export default {
         {
           title: 'Weight Loss',
           subtitle: 'Lose Weight',
-          image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
+          image: 'v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
           description:
             'Multiple options for weight loss including a lifestyle plan with our dietician along with B12 and injections to help increase your metabolism. We also offer an HCG diet plan which can help lose weight fast and effectively.',
         },
         {
           title: 'PRP',
           subtitle: 'Skin Rejuvenation',
-          image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
+          image: 'v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
           description: `PRP is a concentration of platelets in the blood that are crucial to wound healing. When used for skin rejuvenation or in the treatment of hair loss, it releases growth factors into the skin to expedite the body's repair process and stimulate new collagen and elastin production. This means basically using your own body to heal yourself and look younger.`,
         },
         {
           title: 'Botox',
           subtitle: 'Physician Injected',
-          image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494632/services/Service-Botox_df6up6.jpg',
+          image: 'v1608494632/services/Service-Botox_df6up6.jpg',
           description: `Botox is one of the most well-known methods for warding off wrinkles and other signs of aging. It's a prescription medication that's injected into the muscles of the face. Botox works by stopping the muscle that it's injected into from contracting, so it appears relaxed and smooth.`,
         },
         {
           title: 'Fillers',
           subtitle: 'Physician Injected',
-          image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494632/services/Service-Fillers_icqwao.jpg',
+          image: 'v1608494632/services/Service-Fillers_icqwao.jpg',
           description: `If you are concerned about aging or volume loss, as is about hyaluronic acid fillers to fill in deep wrinkles and restore volume to areas where it is lost, such as under eyes, lips, nasolabial folds and cheeks, which will help in giving a more youthful and refined appearance to your face.`,
         },
         {
           title: 'B12 Shots',
           subtitle: 'Constant Energy',
           image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494633/services/Service-Vitamin_B12_Injection_xardxd.jpg',
+            'v1608494633/services/Service-Vitamin_B12_Injection_xardxd.jpg',
           description: `B12 + MIC shots will give you energy. MIC amino acids will increase metabolism to help with weight loss`,
         },
         {
           title: 'Hair Loss Treatment',
           subtitle: 'PRP for Scalp',
-          image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494633/services/Service-PRP_Hair_loss_rdfhul.jpg',
+          image: 'v1608494633/services/Service-PRP_Hair_loss_rdfhul.jpg',
         },
         {
           title: 'Nutrition',
           subtitle: 'Consultation by Registered Dietitians',
           image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494633/services/Service-Personalized_Nutrition_Consultation_bmfbip.jpg',
+            'v1608494633/services/Service-Personalized_Nutrition_Consultation_bmfbip.jpg',
         },
         {
           title: 'Chemical Peel',
           subtitle: 'Medical Grade',
           image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494632/services/Service-Medical_Grade_Chemical_Peel_zn96a7.jpg',
+            'v1608494632/services/Service-Medical_Grade_Chemical_Peel_zn96a7.jpg',
         },
         {
           title: 'Fat Burning Injections',
           subtitle: 'Jumpstart your diet',
           image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494632/services/Service-Fat_Burning_injections_pivnfb.jpg',
+            'v1608494632/services/Service-Fat_Burning_injections_pivnfb.jpg',
         },
         {
           title: 'B12 + Fat Burning Injection Combo',
           subtitle: 'Vitamins and Amino Acids',
           image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608494632/services/Service-B12_Fat_Burning__Combo_apvxfc.jpg',
+            'v1608494632/services/Service-B12_Fat_Burning__Combo_apvxfc.jpg',
         },
         {
           title: 'Food sensitivity and Inflammation Diet Therapy',
           subtitle: 'Know your senses',
-          image:
-            'https://res.cloudinary.com/deck8xqmf/image/upload/v1608495907/services/Service-Food_Sensitivity_qy05qx.jpg',
+          image: 'v1608495907/services/Service-Food_Sensitivity_qy05qx.jpg',
         },
       ],
     }
