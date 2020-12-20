@@ -31,12 +31,6 @@
                   class="inline-block -mt-16 rounded-md md:-mt-4"
                 />
               </XyzTransition>
-              <!-- <img
-                :src="service.image"
-                width="300"
-                height="169"
-                class="inline-block -mt-16 rounded-md md:-mt-4"
-              /> -->
             </center>
             <div class="mt-5 font-bold text-white">
               <h3>{{ service.title }}</h3>
