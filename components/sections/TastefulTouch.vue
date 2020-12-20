@@ -60,7 +60,7 @@
       </div>
     </section>
     <svg
-      class="absolute bottom-0 w-full text-pink-200 fill-current"
+      class="absolute bottom-0 w-full text-purple-100 fill-current"
       viewBox="0 0 1400 74"
       xmlns="http://www.w3.org/2000/svg"
     >
