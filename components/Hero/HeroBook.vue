@@ -18,12 +18,18 @@
         title="Date"
         :options="['ASAP', 'Tomorrow', 'Next Week']"
       />
-      <button
+      <!-- <button
         class="hidden px-8 font-bold text-white transition bg-pink-500 rounded-r-lg md:block hover:bg-blue-400 focus:bg-blue-400"
         @click="showBookingForm = true"
       >
         Book Now
-      </button>
+      </button> -->
+      <nuxt-link
+        to="/book-now"
+        class="hidden px-8 py-8 font-bold text-white transition bg-pink-500 rounded-r-lg md:block hover:bg-blue-400 focus:bg-blue-400"
+      >
+        Book Now
+      </nuxt-link>
     </div>
     <div
       class="justify-center leading-none rounded-l-lg md:hidden sm:flex-wrap md:flex"
