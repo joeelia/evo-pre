@@ -8,7 +8,8 @@
         <div class="lg:w-0 lg:flex-1">
           <Logo />
         </div>
-        <div v-click-outside="hideMobile" class="mb-1 md:hidden">
+        <!-- <div v-click-outside="hideMobile" class="mb-1 md:hidden"> -->
+        <div v-click-outside="hideMobile" class="hidden mb-1">
           <div
             id="nav-toggle"
             class="relative z-50 mr-10"
@@ -19,13 +20,13 @@
           </div>
         </div>
         <nav v-click-outside="hideDesktop" class="hidden space-x-10 md:flex">
-          <nuxt-link
+          <!-- <nuxt-link
             to="/about"
             class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             About
-          </nuxt-link>
-          <div class="relative">
+          </nuxt-link> -->
+          <div class="relative hidden">
             <button
               type="button"
               class="inline-flex items-center space-x-2 text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out group hover:text-gray-900 focus:outline-none focus:text-gray-900"
@@ -262,7 +263,7 @@
                         </nuxt-link>
                       </div>
                       <div class="flow-root">
-                        <nuxt-link
+                        <!-- <nuxt-link
                           to="/contact"
                           class="flex items-center p-3 -m-3 space-x-3 text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out rounded-md hover:bg-gray-100"
                         >
@@ -280,7 +281,7 @@
                             />
                           </svg>
                           <span>Contact</span>
-                        </nuxt-link>
+                        </nuxt-link> -->
                       </div>
                     </div>
                   </div>
@@ -288,19 +289,20 @@
               </div>
             </transition>
           </div>
-          <nuxt-link
-            to="/blog"
+          <!-- <nuxt-link
+            to="/contact"
             class="text-base font-medium leading-6 text-gray-500 transition duration-150 ease-in-out hover:text-gray-900 focus:outline-none focus:text-gray-900"
           >
             Contact
-          </nuxt-link>
+          </nuxt-link> -->
         </nav>
-        <div
+        <!-- <div
           class="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0"
-        >
+        > -->
+        <div class="flex items-center justify-end flex-1 w-0 space-x-8">
           <span class="inline-flex rounded-md shadow-sm">
             <nuxt-link
-              to="/return-on-investment"
+              to="/book-now"
               class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-pink-500 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
             >
               Book Now
@@ -325,7 +327,7 @@
       >
         <div class="shadow-lg">
           <div class="bg-white divide-y-2 shadow-xs divide-gray-50">
-            <div class="px-5 pt-5 pb-6 space-y-6 bg-blue-100">
+            <div class="hidden px-5 pt-5 pb-6 space-y-6 bg-blue-100">
               <div class="flex items-center justify-between">
                 <div>
                   <p
@@ -463,23 +465,23 @@
             </div>
             <div class="px-5 py-6 space-y-6 bg-blue-200">
               <div class="grid grid-cols-2 row-gap-4 col-gap-8">
-                <nuxt-link
-                  to="/quick-wins"
+                <!-- <nuxt-link
+                  to=""
                   class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
                 >
                   About
-                </nuxt-link>
-                <nuxt-link
-                  to="/blog"
+                </nuxt-link> -->
+                <button
+                  @click="openModal"
                   class="text-base font-medium leading-6 text-gray-900 transition duration-150 ease-in-out hover:text-gray-700"
                 >
                   Contact
-                </nuxt-link>
+                </button>
               </div>
               <div class="space-y-6">
                 <span class="flex w-full rounded-md shadow-sm">
                   <nuxt-link
-                    to="/contact"
+                    to="/book-now"
                     class="flex items-center justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
                   >
                     Book Now
@@ -491,6 +493,102 @@
         </div>
       </div>
     </transition>
+    <div v-if="contactModal" class="fixed inset-0 z-10 overflow-y-auto">
+      <div
+        class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+      >
+        <!--
+      Background overlay, show/hide based on modal state.
+
+      Entering: "ease-out duration-300"
+        From: "opacity-0"
+        To: "opacity-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100"
+        To: "opacity-0"
+    -->
+        <div class="fixed inset-0 transition-opacity">
+          <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
+        </div>
+
+        <!-- This element is to trick the browser into centering the modal contents. -->
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen"></span
+        >&#8203;
+        <!--
+      Modal panel, show/hide based on modal state.
+
+      Entering: "ease-out duration-300"
+        From: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+        To: "opacity-100 translate-y-0 sm:scale-100"
+      Leaving: "ease-in duration-200"
+        From: "opacity-100 translate-y-0 sm:scale-100"
+        To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+    -->
+        <div
+          class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-headline"
+        >
+          <div>
+            <div
+              class="flex items-center justify-center w-12 h-12 mx-auto bg-green-100 rounded-full"
+            >
+              <!-- Heroicon name: check -->
+              <svg
+                class="w-6 h-6 text-green-600"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
+            <div class="mt-3 text-center sm:mt-5">
+              <h3
+                class="text-lg font-medium leading-6 text-gray-900"
+                id="modal-headline"
+              >
+                Contact Us!
+              </h3>
+              <div class="mt-2 mb-40">
+                <a
+                  type="button"
+                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-300 bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                  href="sms:+12485952363&body=Hey EVO Body Image!"
+                >
+                  Text Us
+                </a>
+                <a
+                  type="button"
+                  class="inline-flex justify-center w-full px-4 py-2 mt-10 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-300 bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                  href="tel:+(248) 878-6639"
+                >
+                  Call the Spa
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-5 sm:mt-40">
+            <span class="flex w-full shadow-sm">
+              <button
+                type="button"
+                class="inline-flex justify-center w-full py-2 text-base font-medium leading-6 text-purple-600 transition duration-150 ease-in-out bg-pink-200 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                @click="closeModal"
+              >
+                Close
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -503,6 +601,7 @@ export default {
   data() {
     return {
       showMobileMenu: false,
+      contactModal: false,
       showServices: false,
       showBlog: false,
       isSticky: false,
@@ -513,6 +612,11 @@ export default {
     lastThreePosts() {
       return this.$static.blogPost.edges.slice(0, 3)
     },
+  },
+  created() {
+    this.$nuxt.$on('contactModal', (value) => {
+      this.contactModal = value
+    })
   },
   mounted() {
     let lastScrollTop = window.scrollY
@@ -552,6 +656,12 @@ export default {
     hideDesktop(event) {
       this.showServices = false
       this.showBlog = false
+    },
+    openModal(event) {
+      this.contactModal = true
+    },
+    closeModal(event) {
+      this.contactModal = false
     },
     hideMobile(event) {
       this.showMobileMenu = false

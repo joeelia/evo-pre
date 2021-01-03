@@ -83,7 +83,7 @@ export default {
             'Multiple options for weight loss including a lifestyle plan with our dietician along with B12 and injections to help increase your metabolism. We also offer an HCG diet plan which can help lose weight fast and effectively.',
         },
         prp: {
-          title: 'PRP',
+          title: 'PRP - Face',
           description: `PRP is a concentration of platelets in the blood that are crucial to wound healing. When used for skin rejuvenation or in the treatment of hair loss, it releases growth factors into the skin to expedite the body's repair process and stimulate new collagen and elastin production. This means basically using your own body to heal yourself and look younger.`,
         },
         botox: {
