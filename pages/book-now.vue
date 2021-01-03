@@ -3,7 +3,7 @@
     <iframe
       src="https://app.acuityscheduling.com/schedule.php?owner=21606081"
       title="Schedule Appointment"
-      class="overflow-y-visible"
+      style="overflow-y: visible"
       width="100%"
       height="1000px"
       frameBorder="0"
@@ -12,6 +12,7 @@
       src="https://embed.acuityscheduling.com/js/embed.js"
       type="text/javascript"
     ></script>
+    <LightFooter />
   </div>
 </template>
 
