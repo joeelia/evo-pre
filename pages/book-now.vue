@@ -3,7 +3,7 @@
     <iframe
       src="https://app.acuityscheduling.com/schedule.php?owner=21606081"
       title="Schedule Appointment"
-      width="100%"
+      class="w-screen h-full"
       frameBorder="0"
     ></iframe>
     <script
