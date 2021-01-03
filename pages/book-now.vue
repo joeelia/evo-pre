@@ -2,17 +2,16 @@
   <div>
     <iframe
       src="https://app.acuityscheduling.com/schedule.php?owner=21606081"
-      title="Schedule Appointment"
-      style="overflow-y: visible"
+      title="Schedule Appointment with EVO Body Image"
       width="100%"
       height="1000px"
+      scrolling="no"
       frameBorder="0"
     ></iframe>
     <script
       src="https://embed.acuityscheduling.com/js/embed.js"
       type="text/javascript"
     ></script>
-    <LightFooter />
   </div>
 </template>
 
@@ -47,3 +46,8 @@ export default {
   },
 }
 </script>
+<style scoped>
+iframe {
+  overflow: hidden;
+}
+</style>
