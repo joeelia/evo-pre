@@ -34,7 +34,7 @@
             </p>
             <div class="mt-5 lg:text-left lg:mx-0">
               <p class="text-base font-medium text-gray-900">
-                Sign up to get notified when it’s ready.
+                Appointments starting as soon as Friday.
               </p>
               <HeroBook />
               <p class="mt-3 text-sm leading-5 text-gray-500">
