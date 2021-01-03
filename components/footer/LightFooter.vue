@@ -60,6 +60,10 @@ export default {
   methods: {
     contactModalEmit(value) {
       this.$nuxt.$emit('contactModal', value)
+      this.$gtm.push({
+        event: 'gaEvent',
+        event_name: 'contact_modal_open',
+      })
     },
   },
 }

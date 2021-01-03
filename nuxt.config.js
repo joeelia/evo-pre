@@ -68,7 +68,20 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/cloudinary',
+    '@nuxtjs/gtm',
   ],
+  gtm: {
+    id: 'GTM-W3H6BN3',
+    enabled: true,
+    pageTracking: true,
+    respectDoNotTrack: false,
+    pageViewEventName: 'pageview',
+  },
+  publicRuntimeConfig: {
+    gtm: {
+      id: 'GTM-W3H6BN3',
+    },
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
