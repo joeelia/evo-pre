@@ -1,11 +1,6 @@
 /* eslint-disable */
 <template>
   <nuxt-link class="cursor-pointer" to="/">
-    <!-- <span
-      class="text-3xl font-black leading-3 text-transparent font-exo bg-gradient-to-r bg-clip-text from-purple-400 to-pink-500 hover:from-pink-500 hover:to-purple-400"
-    >
-      EVO BODY IMAGE
-    </span> -->
     <svg
       class="w-48 h-48 md:w-56 md:h-56"
       xmlns="http://www.w3.org/2000/svg"
