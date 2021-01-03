@@ -52,29 +52,35 @@ export default {
     return {
       services: [
         {
-          title: 'Weight Loss',
-          subtitle: 'Lose Weight',
+          title: 'HCG Weight Loss',
+          subtitle: 'Quick and Effective Weight Loss Program ',
           image: 'v1609643870/services/Service-Weight_Loss_i8jbic.jpg',
           description:
-            'Multiple options for weight loss including a lifestyle plan with our dietician along with B12 and fat loss injections to help increase your metabolism. We also offer an HCG diet plan which can help lose weight fast and effectively.',
+            'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
         },
         {
           title: 'PRP - Face',
-          subtitle: 'Skin Rejuvenation',
+          subtitle: 'Facial Rejuvenation',
           image: 'v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
           description: `PRP is a concentration of platelets in the blood that are crucial to wound healing. When used for skin rejuvenation or in the treatment of hair loss, it releases growth factors into the skin to expedite the body's repair process and stimulate new collagen and elastin production. This means basically using your own body to heal yourself and look younger.`,
         },
         {
+          title: 'Microneedling',
+          subtitle: 'Skin Rejuvenation',
+          image: 'v1608494632/services/Service-Microneedling_hva9rw.jpg',
+          description: `Microneedling includes using a microneedle to prick the skin, which increases collagen production resulting in smoother, firmer, and more toned skin.  It is used with a serum specific to suit your needs. `,
+        },
+        {
           title: 'Botox',
-          subtitle: 'Physician Injected',
+          subtitle: 'Wrinkle Reduction',
           image: 'v1608494632/services/Service-Botox_df6up6.jpg',
           description: `Botox is one of the most well-known methods for warding off wrinkles and other signs of aging. It's a prescription medication that's injected into the muscles of the face. Botox works by stopping the muscle that it's injected into from contracting, so it appears relaxed and smooth.`,
         },
         {
           title: 'Fillers',
-          subtitle: 'Physician Injected',
+          subtitle: 'Facial Enhancement',
           image: 'v1608494632/services/Service-Fillers_icqwao.jpg',
-          description: `If you are concerned about aging or volume loss, as is about hyaluronic acid fillers to fill in deep wrinkles and restore volume to areas where it is lost, such as under eyes, lips, nasolabial folds and cheeks, which will help in giving a more youthful and refined appearance to your face.`,
+          description: `If you are concerned about aging or volume loss, ask us about hyaluronic acid fillers to fill in wrinkles and restore volume to areas where it is lost. They can be placed under the eyes, lips, nasolabial folds, cheeks, jaw/chin, and hands, which will give a  more youthful and refined appearance to your face.`,
         },
         {
           title: 'B12 + Fat Burning Injection Combo',
@@ -95,11 +101,11 @@ export default {
         },
         {
           title: 'Nutrition',
-          subtitle: 'Consultation by Registered Dietitians',
+          subtitle: 'Consultation + Diet Plan',
           image:
             'v1608494633/services/Service-Personalized_Nutrition_Consultation_bmfbip.jpg',
           description:
-            "Review your medical history, food habits, preferences, food security/availability, dietary practices, feeding skills, eating problems and an analysis of biochemical and anthropometric variables; including the person's height, weight, and the fat content of your body.",
+            "Dietitian supervised review of medical history, food habits, preferences, food security/availability, dietary practices, feeding skills, eating problems, and an analysis of biochemical and anthropometric variables- including the person's height, weight, and fat content of the body. This information is used to come up with a personalized diet plan, with optional follow-ups.",
         },
         {
           title: 'Chemical Peel',
