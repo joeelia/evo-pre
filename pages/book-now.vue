@@ -4,7 +4,7 @@
       src="https://app.acuityscheduling.com/schedule.php?owner=21606081"
       title="Schedule Appointment"
       width="100%"
-      height="100%"
+      height="1200px"
       frameBorder="0"
     ></iframe>
     <script
