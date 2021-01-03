@@ -38,10 +38,7 @@
               </p>
               <HeroBook />
               <p class="mt-3 text-sm leading-5 text-gray-500">
-                We care about the protection of your data. Read our
-                <a href="#" class="font-medium text-gray-900 underline"
-                  >Privacy Policy</a
-                >.
+                We care about the protection of your data.
               </p>
             </div>
           </div>

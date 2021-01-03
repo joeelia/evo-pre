@@ -28,12 +28,18 @@
     <div
       class="justify-center leading-none rounded-l-lg md:hidden sm:flex-wrap md:flex"
     >
-      <button
+      <!-- <button
         class="block w-full px-8 py-4 text-white transition bg-pink-500 rounded-b-lg md:hidden hover:bg-blue-400 focus:bg-blue-400"
         @click="showBookingForm = true"
       >
         Book Now
-      </button>
+      </button> -->
+      <nuxt-link
+        to="/book-now"
+        class="block w-full px-8 py-4 text-white transition bg-pink-500 rounded-b-lg md:hidden hover:bg-blue-400 focus:bg-blue-400"
+      >
+        Book Now
+      </nuxt-link>
     </div>
   </div>
 </template>

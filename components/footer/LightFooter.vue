@@ -13,7 +13,7 @@
       class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8"
     >
       <div class="flex justify-center mt-8 space-x-6">
-        <a href="#" class="text-black hover:text-black">
+        <!-- <a href="#" class="text-black hover:text-black">
           <span class="sr-only">Facebook</span>
           <svg
             class="w-6 h-6"
@@ -27,8 +27,11 @@
               clip-rule="evenodd"
             />
           </svg>
-        </a>
-        <a href="#" class="text-black hover:text-black">
+        </a> -->
+        <a
+          href="https://instagram.com/evobodyimage"
+          class="text-black hover:text-black"
+        >
           <span class="sr-only">Instagram</span>
           <svg
             class="w-6 h-6"

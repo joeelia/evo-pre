@@ -38,10 +38,10 @@
               Our services can also help you meet your aesthetic needs and tweak
               your perfect imperfections. Schedule an appointment now.
             </p>
-            <a
-              href="#"
+            <nuxt-link
+              to="/book-now"
               class="px-1 pb-1 font-semibold uppercase transition-colors duration-500 border-b-4 border-gray-800 text-md hover:border-green-700 hover:text-white"
-              >Learn more</a
+              >Learn more</nuxt-link
             >
           </div>
         </div>
