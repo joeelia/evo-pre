@@ -4,7 +4,7 @@
       src="https://app.acuityscheduling.com/schedule.php?owner=21606081"
       title="Schedule Appointment with EVO Body Image"
       width="100%"
-      height="1000px"
+      height="2300px"
       scrolling="no"
       frameBorder="0"
     ></iframe>
@@ -46,8 +46,3 @@ export default {
   },
 }
 </script>
-<style scoped>
-iframe {
-  overflow: hidden;
-}
-</style>
