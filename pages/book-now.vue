@@ -19,7 +19,7 @@
 export default {
   data() {
     return {
-      title: 'EVO Body Image - Medical Spa | Birmingham, MI',
+      title: 'EVO Body Image - Medical Spa| Book Now | Birmingham, MI',
     }
   },
   head() {
