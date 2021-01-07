@@ -116,8 +116,8 @@ export default {
             'A medical grade chemical peel will help remove dead skin cells and induce collagen, remove sun and age spots, decrease the appearance of fine lines and wrinkles, brighten the complexion and make the skin smoother.',
         },
         {
-          title: 'Food sensitivity and Inflammation Diet Therapy',
-          subtitle: 'Know your senses',
+          title: 'Food Sensitivity and Inflammation Diet Therapy',
+          subtitle: 'Food Sensitive Dieting ',
           image: 'v1608495907/services/Service-Food_Sensitivity_qy05qx.jpg',
           description:
             'MRT lab test identifies inflammatory responses to foods and food chemicals. It will be used to create a highly effective anti-inflammatory eating plan to provide quick and lasting relief for IBS, migraines, fibromyalgia, and other chronic health problems.',
