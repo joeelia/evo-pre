@@ -300,7 +300,10 @@
           class="items-center justify-end hidden space-x-8 md:flex md:flex-1 lg:w-0"
         > -->
         <div class="flex items-center justify-end flex-1 w-0 space-x-8">
-          <span class="inline-flex rounded-md shadow-sm">
+          <span
+            v-if="$route.fullPath.indexOf('book-now') != true"
+            class="inline-flex rounded-md shadow-sm"
+          >
             <nuxt-link
               to="/book-now"
               class="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-pink-500 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
