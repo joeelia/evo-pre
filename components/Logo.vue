@@ -2,7 +2,7 @@
 <template>
   <nuxt-link class="cursor-pointer" to="/">
     <svg
-      class="w-48 h-48 md:w-56 md:h-56"
+      class="h-8 w-auto sm:h-10"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       x="0px"

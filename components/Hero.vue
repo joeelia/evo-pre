@@ -33,13 +33,14 @@
               dietitian, help you achieve your lifestyle and aesthetic goals.
             </p>
             <div class="mt-5 lg:text-left lg:mx-0">
-              <p class="text-base font-medium text-gray-900">
-                Appointments starting as soon as Friday.
-              </p>
-              <HeroBook />
-              <p class="mt-3 text-sm leading-5 text-gray-500">
-                We care about the protection of your data.
-              </p>
+              <p class="text-base font-medium text-gray-900">Book Now</p>
+
+              <nuxt-link
+                to="book-now"
+                class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
+              >
+                Appointments Starting Friday!
+              </nuxt-link>
             </div>
           </div>
           <!-- <div
