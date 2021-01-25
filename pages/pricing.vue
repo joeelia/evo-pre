@@ -87,7 +87,7 @@
                     d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
                   />
                 </svg>
-                <nuxt-link to="book-now" class="ml-3">Book Now</nuxt-link>
+                <nuxt-link to="/book-now" class="ml-3">Book Now</nuxt-link>
               </a>
             </div>
             <div class="-ml-px w-0 flex-1 flex">
@@ -211,7 +211,7 @@
                 Malesuada adipiscing sagittis vel nulla nec.
               </p>
               <nuxt-link
-                to="book-now"
+                to="/book-now"
                 class="mt-8 bg-orange-100 border border-transparent rounded-md shadow py-3 px-6 inline-flex items-center text-base font-medium text-red-600 hover:text-red-500"
                 >Book Now
               </nuxt-link>

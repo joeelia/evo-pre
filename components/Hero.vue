@@ -36,7 +36,7 @@
               <p class="text-base font-medium text-gray-900">Book Now</p>
 
               <nuxt-link
-                to="book-now"
+                to="/book-now"
                 class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
               >
                 Appointments Starting Friday!
