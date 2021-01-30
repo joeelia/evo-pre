@@ -147,12 +147,7 @@ export default {
   },
   head() {
     return {
-      script: [
-        {
-          innerHTML: JSON.stringify(this.faqJSON),
-          type: 'application/ld+json',
-        },
-      ],
+      script: [{ type: 'application/ld+json', json: this.faqJSON }],
     }
   },
   created() {

@@ -5,16 +5,7 @@
     <LightFooter />
   </div>
 </template>
-<script>
-export default {
-  metaInfo: {
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-    ],
-  },
-}
-</script>
+
 <style>
 .s-bg {
   background-color: #fff5f5;
