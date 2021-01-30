@@ -119,42 +119,52 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS HCG WEIGHT LOSS?',
-            answer: `HCG is a hormone produced by placenta during pregnancy.
-              
-              Depending on the desired weight loss, it can be used for 23 days or 35 days for up to 20-40lbs weight loss. Even though you are on a very low calorie diet, your appetite will be suppressed as a result of the hormone.
-              
-              This service comes with biweekly Vitamin B12, Vitamin B1-B6 and Fat Loss injections.`,
+            question: 'WHAT IS BOTOX?',
+            answer: `Botox is an injectable muscle relaxer, used to temporarily paralyze muscles resulting in wrinkle reduction as well as wrinkle prevention.  It can be used between the brows, on the forehead, around the eyes, under the eyes, bunny lines, on the jaw as well as the chin.`,
           },
           {
-            question: 'HOW LONG WILL THE RESULTS LAST?',
-            answer: `That depends on you. There is more than one phase to the diet,
-                  with the first phase consisting of a very low calorie diet,
-                  minimal exercise, avoiding certain types of food and staying
-                  adequately hydrated. Over the next phase, calories are
-                  gradually increased while still limiting certain products and
-                  adding them later on during the last phase.
-                  
-                  The whole point is not just a quick weight loss,
-                  but it is also lifestyle modification to allow for weight
-                  maintenance after the initial goal weight has been achieved.`,
+            question: 'WHO IS A GOOD CANDIDATE FOR BOTOX?',
+            answer: `The best candidate for botox treatments are people who are overall healthy, without any neuromuscular diseases, who are not pregnant or nursing, and who are at least 18 years in age.`,
           },
           {
-            question: 'IF I GAIN SOME OF THE WEIGHT BACK, WHAT ARE MY OPTIONS?',
-            answer: `You can do another round of HCG after a minimum of 6 week
-                  break. If you choose not to do so, our Registered Dietitian
-                  can help you get on an alternative track with monthly follow
-                  ups.`,
+            question: 'HOW LONG DO RESULTS LAST?',
+            answer: `Once injected, it takes about 2 weeks for optimal results that typically last between 3-6 months.`,
           },
         ],
       },
+      faqJSON: {},
     }
   },
+  head() {
+    return {
+      script: [
+        {
+          innerHTML: JSON.stringify(this.faqJSON),
+          type: 'application/ld+json',
+        },
+      ],
+    }
+  },
+  created() {
+    this.faqJSONString()
+  },
   methods: {
-    serviceClicked(service) {
-      this.serviceContent.class = 'fade-in'
-      this.serviceContent.title = service.title
-      this.serviceContent.description = service.description
+    faqJSONString() {
+      this.faqJSON = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [],
+      }
+      for (let i = 0; i < this.service.faqs.length; i++) {
+        this.faqJSON.mainEntity.push({
+          '@type': 'Question',
+          name: this.service.faqs[i].question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: this.service.faqs[i].answer,
+          },
+        })
+      }
     },
   },
 }

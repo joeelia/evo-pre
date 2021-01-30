@@ -132,13 +132,39 @@ export default {
           },
         ],
       },
+      faqJSON: {},
     }
   },
+  head() {
+    return {
+      script: [
+        {
+          innerHTML: JSON.stringify(this.faqJSON),
+          type: 'application/ld+json',
+        },
+      ],
+    }
+  },
+  created() {
+    this.faqJSONString()
+  },
   methods: {
-    serviceClicked(service) {
-      this.serviceContent.class = 'fade-in'
-      this.serviceContent.title = service.title
-      this.serviceContent.description = service.description
+    faqJSONString() {
+      this.faqJSON = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: [],
+      }
+      for (let i = 0; i < this.service.faqs.length; i++) {
+        this.faqJSON.mainEntity.push({
+          '@type': 'Question',
+          name: this.service.faqs[i].question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: this.service.faqs[i].answer,
+          },
+        })
+      }
     },
   },
 }
