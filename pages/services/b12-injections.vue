@@ -108,16 +108,18 @@
 </template>
 <script>
 export default {
-  name: 'HCGWeightLoss',
+  name: 'B12Injections',
   data() {
     return {
       service: {
-        title: 'HCG Weight Loss',
-        subtitle: 'Quick and Effective Weight Loss Program ',
-        image: 'v1609643870/services/Service-Weight_Loss_i8jbic.jpg',
-        description:
-          'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
-        h2: 'Live A Healthy Lifestyle',
+        title: 'B12 + Fat Burning Injection Combo',
+        subtitle: 'Vitamins and Amino Acids',
+        image: 'v1608494633/services/Service-Vitamin_B12_Injection_xardxd.jpg',
+        description: `Vitamin B12 + Fat burning MIC combo injection- Vitamin B12 helps
+          increases energy and improves metabolism. Fat burning
+          injections helps break down of stubborn
+          fat in the body, aiding in additional weight loss.`,
+        h2: 'something',
         faqs: [
           {
             question: 'WHAT IS HCG WEIGHT LOSS?',

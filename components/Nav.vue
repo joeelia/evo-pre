@@ -11,6 +11,15 @@
             <Logo />
           </a>
         </div>
+        <div class="md:hidden whitespace-no-wrap">
+          <nuxt-link
+            v-if="$route.fullPath.indexOf('book-now') != true"
+            to="/book-now"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
+          >
+            Book Now
+          </nuxt-link>
+        </div>
         <div class="-mr-2 -my-2 md:hidden">
           <button
             type="button"
@@ -209,20 +218,17 @@
               <div class="mt-6">
                 <nav
                   @click.prevent="showMobileMenu = false"
-                  class="grid grid-cols-1 gap-7"
+                  class="grid grid-cols-2 gap-7"
                 >
                   <nuxt-link
                     v-for="(service, i) in services"
                     :key="i"
                     :to="service.path"
-                    class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                    class="text-left whitespace-no-wrap -m-3 p-3 rounded-lg hover:bg-pink-50 border-2 border-purple-500 hover:border-transparent"
                   >
                     <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
+                      class="-ml-4 py-2 px-4 text-base font-medium text-purple-900"
                     >
-                      <!-- Heroicon name: inbox -->
-                    </div>
-                    <div class="ml-4 text-base font-medium text-gray-900">
                       {{ service.title }}
                     </div>
                   </nuxt-link>
@@ -230,10 +236,12 @@
               </div>
             </div>
             <div class="py-6 px-5">
-              <div class="grid grid-cols-2 gap-4">
+              <div
+                class="grid grid-cols-2 gap-4"
+                @click="showMobileMenu = false"
+              >
                 <nuxt-link
                   to="/pricing"
-                  @click.prevent="showMobileMenu = false"
                   class="text-base font-medium text-gray-900 hover:text-gray-700"
                 >
                   Pricing
@@ -392,47 +400,47 @@ export default {
         {
           title: 'PRP - Face',
           subtitle: 'Facial Rejuvenation',
-          path: '/services/hcg-weight-loss',
+          path: '/services/prp-face',
         },
         {
           title: 'Microneedling',
           subtitle: 'Skin Rejuvenation',
-          path: '/services/hcg-weight-loss',
+          path: '/services/microneedling',
         },
         {
           title: 'Botox',
           subtitle: 'Wrinkle Reduction',
-          path: '/services/hcg-weight-loss',
+          path: '/services/botox',
         },
         {
           title: 'Fillers',
           subtitle: 'Facial Enhancement',
-          path: '/services/hcg-weight-loss',
+          path: '/services/fillers',
         },
         {
           title: 'B12 Injections',
           subtitle: 'Vitamins and Amino Acids',
-          path: '/services/hcg-weight-loss',
+          path: '/services/b12-injections',
         },
         {
           title: 'PRP - Scalp',
           subtitle: 'Hair Growth Stimulation',
-          path: '/services/hcg-weight-loss',
+          path: '/services/prp-scalp',
         },
         {
           title: 'Nutrition',
           subtitle: 'Consultation + Diet Plan',
-          path: '/services/hcg-weight-loss',
+          path: '/services/nutrition',
         },
         {
           title: 'Chemical Peel',
           subtitle: 'Medical Grade',
-          path: '/services/hcg-weight-loss',
+          path: '/services/chemical-peel',
         },
         {
           title: 'Diet Therapy',
           subtitle: 'Food Sensitive Dieting ',
-          path: '/services/hcg-weight-loss',
+          path: '/services/diet-therapy',
         },
       ],
     }

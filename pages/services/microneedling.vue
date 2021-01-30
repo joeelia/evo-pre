@@ -108,16 +108,15 @@
 </template>
 <script>
 export default {
-  name: 'HCGWeightLoss',
+  name: 'Microneedling',
   data() {
     return {
       service: {
-        title: 'HCG Weight Loss',
-        subtitle: 'Quick and Effective Weight Loss Program ',
-        image: 'v1609643870/services/Service-Weight_Loss_i8jbic.jpg',
-        description:
-          'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
-        h2: 'Live A Healthy Lifestyle',
+        title: 'Microneedling',
+        subtitle: 'Skin Rejuvenation',
+        image: 'v1608494632/services/Service-Microneedling_hva9rw.jpg',
+        description: `Microneedling includes using a microneedle to prick the skin, which increases collagen production resulting in smoother, firmer, and more toned skin.  It is used with a serum specific to suit your needs. `,
+        h2: 'something',
         faqs: [
           {
             question: 'WHAT IS HCG WEIGHT LOSS?',

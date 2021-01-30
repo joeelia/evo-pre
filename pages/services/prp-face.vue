@@ -108,16 +108,15 @@
 </template>
 <script>
 export default {
-  name: 'HCGWeightLoss',
+  name: 'PRPFace',
   data() {
     return {
       service: {
-        title: 'HCG Weight Loss',
-        subtitle: 'Quick and Effective Weight Loss Program ',
-        image: 'v1609643870/services/Service-Weight_Loss_i8jbic.jpg',
-        description:
-          'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
-        h2: 'Live A Healthy Lifestyle',
+        title: 'PRP - Face',
+        subtitle: 'Facial Rejuvenation',
+        image: 'v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
+        description: `PRP is a concentration of platelets in the blood that are crucial to wound healing. When used for skin rejuvenation or in the treatment of hair loss, it releases growth factors into the skin to expedite the body's repair process and stimulate new collagen and elastin production. This means basically using your own body to heal yourself and look younger.`,
+        h2: 'something',
         faqs: [
           {
             question: 'WHAT IS HCG WEIGHT LOSS?',

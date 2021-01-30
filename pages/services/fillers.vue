@@ -108,16 +108,15 @@
 </template>
 <script>
 export default {
-  name: 'HCGWeightLoss',
+  name: 'Fillers',
   data() {
     return {
       service: {
-        title: 'HCG Weight Loss',
-        subtitle: 'Quick and Effective Weight Loss Program ',
-        image: 'v1609643870/services/Service-Weight_Loss_i8jbic.jpg',
-        description:
-          'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
-        h2: 'Live A Healthy Lifestyle',
+        title: 'Fillers',
+        subtitle: 'Facial Enhancement',
+        image: 'v1608494632/services/Service-Fillers_icqwao.jpg',
+        description: `If you are concerned about aging or volume loss, ask us about hyaluronic acid fillers to fill in wrinkles and restore volume to areas where it is lost. They can be placed under the eyes, lips, nasolabial folds, cheeks, jaw/chin, and hands, which will give a  more youthful and refined appearance to your face.`,
+        h2: 'something',
         faqs: [
           {
             question: 'WHAT IS HCG WEIGHT LOSS?',

@@ -108,16 +108,15 @@
 </template>
 <script>
 export default {
-  name: 'HCGWeightLoss',
+  name: 'Botox',
   data() {
     return {
       service: {
-        title: 'HCG Weight Loss',
-        subtitle: 'Quick and Effective Weight Loss Program ',
-        image: 'v1609643870/services/Service-Weight_Loss_i8jbic.jpg',
-        description:
-          'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
-        h2: 'Live A Healthy Lifestyle',
+        title: 'Botox',
+        subtitle: 'Wrinkle Reduction',
+        image: 'v1608494632/services/Service-Botox_df6up6.jpg',
+        description: `Botox is one of the most well-known methods for warding off wrinkles and other signs of aging. It's a prescription medication that's injected into the muscles of the face. Botox works by stopping the muscle that it's injected into from contracting, so it appears relaxed and smooth.`,
+        h2: 'something',
         faqs: [
           {
             question: 'WHAT IS HCG WEIGHT LOSS?',
