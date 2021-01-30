@@ -7,16 +7,11 @@
 </template>
 <script>
 export default {
-  <meta charset='utf-8'>
-  head() {
-    return {
-      script: [
-        {
-          innerHTML: JSON.stringify(this.faqJSON),
-          type: 'application/ld+json',
-        },
-      ],
-    }
+  metaInfo: {
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    ],
   },
 }
 </script>
