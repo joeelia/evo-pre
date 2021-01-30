@@ -5,7 +5,21 @@
     <LightFooter />
   </div>
 </template>
-
+<script>
+export default {
+  <meta charset='utf-8'>
+  head() {
+    return {
+      script: [
+        {
+          innerHTML: JSON.stringify(this.faqJSON),
+          type: 'application/ld+json',
+        },
+      ],
+    }
+  },
+}
+</script>
 <style>
 .s-bg {
   background-color: #fff5f5;

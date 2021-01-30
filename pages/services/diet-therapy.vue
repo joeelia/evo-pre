@@ -60,7 +60,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-12 sm:mt-16 lg:mt-0">
+          <div class="mt-12 sm:mt-16 lg:mt-0 overflow-x-hidden">
             <div
               class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
             >
