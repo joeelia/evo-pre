@@ -119,32 +119,16 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS HCG WEIGHT LOSS?',
-            answer: `HCG is a hormone produced by placenta during pregnancy.
-              
-              Depending on the desired weight loss, it can be used for 23 days or 35 days for up to 20-40lbs weight loss. Even though you are on a very low calorie diet, your appetite will be suppressed as a result of the hormone.
-              
-              This service comes with biweekly Vitamin B12, Vitamin B1-B6 and Fat Loss injections.`,
+            question: 'WHAT IS MICRONEEDLING?',
+            answer: `Microneedling involves using a device that pricks the skin with tiny sterilized needles creating multiple small wounds. Our spa uses one of the only FDA approved microneedling devices.`,
           },
           {
-            question: 'HOW LONG WILL THE RESULTS LAST?',
-            answer: `That depends on you. There is more than one phase to the diet,
-                  with the first phase consisting of a very low calorie diet,
-                  minimal exercise, avoiding certain types of food and staying
-                  adequately hydrated. Over the next phase, calories are
-                  gradually increased while still limiting certain products and
-                  adding them later on during the last phase.
-                  
-                  The whole point is not just a quick weight loss,
-                  but it is also lifestyle modification to allow for weight
-                  maintenance after the initial goal weight has been achieved.`,
+            question: 'WHAT ARE THE BENEFITS OF MICRONEEDLING?',
+            answer: `Once the small wounds are created using the microneedling device, it stimulates your body to make more collagen and elastin, which heals your skin and gives an overall youthful appearance. In addition, it tightens the skin, reduces pore sizes, reduces fine lines and wrinkles as well as helps with pigmentation and uneven skin tone.`,
           },
           {
-            question: 'IF I GAIN SOME OF THE WEIGHT BACK, WHAT ARE MY OPTIONS?',
-            answer: `You can do another round of HCG after a minimum of 6 week
-                  break. If you choose not to do so, our Registered Dietitian
-                  can help you get on an alternative track with monthly follow
-                  ups.`,
+            question: 'CAN I GET MICRONEEDLING WITHOUT PRP?',
+            answer: `Absolutely. You have the option to do microneedling therapy on its own. We use a serum prior to gliding the microneedle device across your face. Once done, all you have to do is let the skin heal properly while using adequate sunscreen if stepping outdoors. Optimal results will be apparent within a few days to a week.`,
           },
         ],
       },

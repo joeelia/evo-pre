@@ -108,37 +108,42 @@
 </template>
 <script>
 export default {
-  name: 'B12Injections',
+  name: 'ChemicalPeel',
   data() {
     return {
       service: {
-        title: 'B12 + Fat Burning Injection Combo',
-        subtitle: 'Vitamins and Amino Acids',
-        image: 'v1608494633/services/Service-Vitamin_B12_Injection_xardxd.jpg',
-        description: `Vitamin B12 + Fat burning MIC combo injection- Vitamin B12 helps
-          increases energy and improves metabolism. Fat burning
-          injections helps break down of stubborn
-          fat in the body, aiding in additional weight loss.`,
+        title: 'Chemical Peel',
+        subtitle: 'Medical Grade',
+        image:
+          'v1608494632/services/Service-Medical_Grade_Chemical_Peel_zn96a7.jpg',
+        description:
+          'A medical grade chemical peel will help remove dead skin cells and induce collagen, remove sun and age spots, decrease the appearance of fine lines and wrinkles, brighten the complexion and make the skin smoother.',
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS THE BENEFIT OF A VITAMIN B12 INJECTION?',
-            answer: `Vitamin B12 injection  helps your body use fat and carbohydrates for energy and make new protein. It is also important for normal blood, cells, and nerves. Aside from a boost in energy, it increases your metabolism resulting in weight loss as well.`,
+            question: 'WHAT IS A MEDICAL GRADE CHEMICAL PEEL?',
+            answer: `A medical grade chemical peel is a peel that has been extensively researched and can only be used by a healthcare expert. It works by lifting away dead cells, allowing cell renewal and overall improvement in skin quality.`,
           },
           {
-            question: 'WHAT ARE FAT LOSS INJECTIONS?',
-            answer: `Fat Loss injections, or MIC, are made up of vitamins and amino acids consisting of Methionine, Inositol and Choline. 
-            
-            Methionine helps in breaking down of fat resulting in decreased fat buildup in arteries. It also aids in liver detoxification. 
-            
-            Inositol utilizes fat as a form of energy. It is also used for cellular nutrient absorption and keeping nerve signals healthy. 
-            
-            Choline controls blood cholesterol level and keeps the cells healthy. It also helps in maintaining the nervous system and assists in memory.`,
+            question: 'WHAT ARE THE BENEFITS OF A MEDICAL GRADE CHEMICAL PEEL?',
+            answer: `It will even the skin tone while reducing the appearance of acne scars and hyperpigmentation, soften fine lines and wrinkles. The newly renewed/exfoliated skin will be more hydrated and brighter as well as able to soak up regular skin care products better. It is a great anti aging regimen to add to your other beauty regimen.`,
           },
           {
             question:
-              'WHO IS A GOOD CANDIDATE FOR VITAMIN B12 + FAT LOSS COMBO INJECTION?',
-            answer: `A good candidate would be anyone desiring additional weight loss, including a decrease in cholesterol levels, a boost in energy, maintain healthy nerve impulses and aid in liver detoxification.`,
+              'WHO IS A GOOD CANDIDATE FOR A MEDICAL GRADE CHEMICAL PEEL?',
+            answer: `Anyone with Fitzpatrik skin type I through V.
+            
+            Type I consists of pale white skin which always burns, does not tan. Type V is brown skin that rarely burns, tans dark easily.
+            
+            People with Fitzpatrick skin type VI i.e., dark brown or black skin which never burns but always tans darkly, are not ideal candidates for this peel.`,
+          },
+          {
+            question: 'HOW OFTEN CAN I DO A MEDICAL GRADE CHEMICAL PEEL?',
+            answer: `It can be done every 4 to 6 weeks.`,
+          },
+          {
+            question: 'HOW MUCH DOWN TIME IS REQUIRED?',
+            answer: `Typically 3-5 days, depending on skin type.`,
           },
         ],
       },

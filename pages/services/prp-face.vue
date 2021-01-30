@@ -119,32 +119,24 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS HCG WEIGHT LOSS?',
-            answer: `HCG is a hormone produced by placenta during pregnancy.
-              
-              Depending on the desired weight loss, it can be used for 23 days or 35 days for up to 20-40lbs weight loss. Even though you are on a very low calorie diet, your appetite will be suppressed as a result of the hormone.
-              
-              This service comes with biweekly Vitamin B12, Vitamin B1-B6 and Fat Loss injections.`,
+            question: 'WHAT IS PRP?',
+            answer: `PRP or platelet rich plasma, uses your own blood that is rich in platelets, which are essential to healing and contain growth factors, to stimulate new and healthy skin cells.
+            
+            During PRP facial hair stimulation, blood is drawn from you and spun in a centrifuge which separates the platelet rich portion of the blood from other components, allowing for the most beneficial components of the blood to be used for skin rejuvenation. 
+            
+            When the PRP is injected into the desired parts of the face that needs replenishing, or into the scalp for hair stimulation, the renewal process begins. The process is also sped up since these concentrated platelets are full of growing and healing factors, which help repair and attract important stem cells needed to heal the damaged skin and tissue. 
+            
+            The injection areas can be targeted, such as under the eyes, nasolabial folds, cheeks, lips, jawline and neck or specific scalp areas with noticeable hair thinning, to allow for maximum benefit. The initial results are usually apparent within 4-6 weeks however the healing process is ongoing and skin/scalp will continue to be stimulated resulting in a more overall youthful appearance with time.`,
           },
           {
-            question: 'HOW LONG WILL THE RESULTS LAST?',
-            answer: `That depends on you. There is more than one phase to the diet,
-                  with the first phase consisting of a very low calorie diet,
-                  minimal exercise, avoiding certain types of food and staying
-                  adequately hydrated. Over the next phase, calories are
-                  gradually increased while still limiting certain products and
-                  adding them later on during the last phase.
-                  
-                  The whole point is not just a quick weight loss,
-                  but it is also lifestyle modification to allow for weight
-                  maintenance after the initial goal weight has been achieved.`,
+            question: 'WHAT ARE THE BENEFITS OF PRP?',
+            answer: `PRP stimulates elastin and collagen stimulation, resulting in tighter and smoother skin as well as reduction in the appearance of wrinkles and fine lines. In addition, it boosts collagen resulting in overall skin rejuvenation, a more youthful appearance and long lasting results. 
+            
+            PRP is natural and safe since it is using the natural elements of your own blood, without the addition of any foreign products.`,
           },
           {
-            question: 'IF I GAIN SOME OF THE WEIGHT BACK, WHAT ARE MY OPTIONS?',
-            answer: `You can do another round of HCG after a minimum of 6 week
-                  break. If you choose not to do so, our Registered Dietitian
-                  can help you get on an alternative track with monthly follow
-                  ups.`,
+            question: 'HOW LONG DO RESULTS LAST?',
+            answer: `Results typically last 12-18 months after a minimum of 3 treatments spaced about 4 weeks apart.`,
           },
         ],
       },

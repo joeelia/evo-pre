@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-gray-50">
+      <div v-if="service.faqs" class="bg-gray-50">
         <!-- FAQ -->
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-gray-900 text-center">
@@ -102,45 +102,22 @@
           </div>
         </div>
       </div>
-      <LookingForMore />
+      <LookingForMore class="pt-10" />
     </div>
   </section>
 </template>
 <script>
 export default {
-  name: 'B12Injections',
+  name: 'DietTherapy',
   data() {
     return {
       service: {
-        title: 'B12 + Fat Burning Injection Combo',
-        subtitle: 'Vitamins and Amino Acids',
-        image: 'v1608494633/services/Service-Vitamin_B12_Injection_xardxd.jpg',
-        description: `Vitamin B12 + Fat burning MIC combo injection- Vitamin B12 helps
-          increases energy and improves metabolism. Fat burning
-          injections helps break down of stubborn
-          fat in the body, aiding in additional weight loss.`,
+        title: 'Food Sensitivity and Inflammation Diet Therapy',
+        subtitle: 'Food Sensitive Dieting ',
+        image: 'v1608495907/services/Service-Food_Sensitivity_qy05qx.jpg',
+        description:
+          'MRT lab test identifies inflammatory responses to foods and food chemicals. It will be used to create a highly effective anti-inflammatory eating plan to provide quick and lasting relief for IBS, migraines, fibromyalgia, and other chronic health problems.',
         h2: 'something',
-        faqs: [
-          {
-            question: 'WHAT IS THE BENEFIT OF A VITAMIN B12 INJECTION?',
-            answer: `Vitamin B12 injection  helps your body use fat and carbohydrates for energy and make new protein. It is also important for normal blood, cells, and nerves. Aside from a boost in energy, it increases your metabolism resulting in weight loss as well.`,
-          },
-          {
-            question: 'WHAT ARE FAT LOSS INJECTIONS?',
-            answer: `Fat Loss injections, or MIC, are made up of vitamins and amino acids consisting of Methionine, Inositol and Choline. 
-            
-            Methionine helps in breaking down of fat resulting in decreased fat buildup in arteries. It also aids in liver detoxification. 
-            
-            Inositol utilizes fat as a form of energy. It is also used for cellular nutrient absorption and keeping nerve signals healthy. 
-            
-            Choline controls blood cholesterol level and keeps the cells healthy. It also helps in maintaining the nervous system and assists in memory.`,
-          },
-          {
-            question:
-              'WHO IS A GOOD CANDIDATE FOR VITAMIN B12 + FAT LOSS COMBO INJECTION?',
-            answer: `A good candidate would be anyone desiring additional weight loss, including a decrease in cholesterol levels, a boost in energy, maintain healthy nerve impulses and aid in liver detoxification.`,
-          },
-        ],
       },
     }
   },
