@@ -38,6 +38,7 @@ export default {
   plugins: [
     { src: '~/plugins/date-picker.js', mode: 'client' },
     { src: '~/plugins/aos.client', mode: 'client' },
+    { src: '~/plugins/nl2br.client', mode: 'client' },
   ],
   /*
    ** Auto import components
@@ -52,7 +53,6 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
-    '@teamnovu/nuxt-breaky',
   ],
   tailwindcss: {
     exposeConfig: true,

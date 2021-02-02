@@ -4,9 +4,15 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
+//const colors = require('tailwindcss/colors')
 module.exports = {
   theme: {
     extend: {
+      // colors: {
+      //   // Add the colors you want
+      //   orange: colors.orange,
+      //   rose: colors.rose,
+      // },
       fontFamily: {
         exo: ['"Exo 2"', 'Helvetica', 'Arial', 'sans-serif'],
       },

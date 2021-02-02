@@ -2,6 +2,7 @@
   <div class="s-bg">
     <Nav />
     <Nuxt />
+    <LightFooter />
   </div>
 </template>
 
