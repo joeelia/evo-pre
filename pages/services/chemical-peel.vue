@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -121,16 +114,16 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS A MEDICAL GRADE CHEMICAL PEEL?',
+            question: 'What is a medican grade Chemical Peel?',
             answer: `A medical grade chemical peel is a peel that has been extensively researched and can only be used by a healthcare expert. It works by lifting away dead cells, allowing cell renewal and overall improvement in skin quality.`,
           },
           {
-            question: 'WHAT ARE THE BENEFITS OF A MEDICAL GRADE CHEMICAL PEEL?',
+            question: 'What are the benefits of a medical grade Chemical Peel?',
             answer: `It will even the skin tone while reducing the appearance of acne scars and hyperpigmentation, soften fine lines and wrinkles. The newly renewed/exfoliated skin will be more hydrated and brighter as well as able to soak up regular skin care products better. It is a great anti aging regimen to add to your other beauty regimen.`,
           },
           {
             question:
-              'WHO IS A GOOD CANDIDATE FOR A MEDICAL GRADE CHEMICAL PEEL?',
+              'Who is a good candidate for a medical grade Chemical Peel?',
             answer: `Anyone with Fitzpatrik skin type I through V.
             
             Type I consists of pale white skin which always burns, does not tan. Type V is brown skin that rarely burns, tans dark easily.
@@ -138,11 +131,11 @@ export default {
             People with Fitzpatrick skin type VI i.e., dark brown or black skin which never burns but always tans darkly, are not ideal candidates for this peel.`,
           },
           {
-            question: 'HOW OFTEN CAN I DO A MEDICAL GRADE CHEMICAL PEEL?',
+            question: 'How often can I do a medical grade Chemical Peel?',
             answer: `It can be done every 4 to 6 weeks.`,
           },
           {
-            question: 'HOW MUCH DOWN TIME IS REQUIRED?',
+            question: 'How much down time is required?',
             answer: `Typically 3-5 days, depending on skin type.`,
           },
         ],

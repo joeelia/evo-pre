@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -119,15 +112,15 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS BOTOX?',
+            question: 'What is Botox?',
             answer: `Botox is an injectable muscle relaxer, used to temporarily paralyze muscles resulting in wrinkle reduction as well as wrinkle prevention.  It can be used between the brows, on the forehead, around the eyes, under the eyes, bunny lines, on the jaw as well as the chin.`,
           },
           {
-            question: 'WHO IS A GOOD CANDIDATE FOR BOTOX?',
+            question: 'Who is a good candidate for Botox?',
             answer: `The best candidate for botox treatments are people who are overall healthy, without any neuromuscular diseases, who are not pregnant or nursing, and who are at least 18 years in age.`,
           },
           {
-            question: 'HOW LONG DO RESULTS LAST?',
+            question: 'How long do results last?',
             answer: `Once injected, it takes about 2 weeks for optimal results that typically last between 3-6 months.`,
           },
         ],

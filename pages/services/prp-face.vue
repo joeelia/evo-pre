@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -119,7 +112,7 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS PRP?',
+            question: 'What is PRP?',
             answer: `PRP or platelet rich plasma, uses your own blood that is rich in platelets, which are essential to healing and contain growth factors, to stimulate new and healthy skin cells.
             
             During PRP facial hair stimulation, blood is drawn from you and spun in a centrifuge which separates the platelet rich portion of the blood from other components, allowing for the most beneficial components of the blood to be used for skin rejuvenation. 
@@ -129,13 +122,13 @@ export default {
             The injection areas can be targeted, such as under the eyes, nasolabial folds, cheeks, lips, jawline and neck or specific scalp areas with noticeable hair thinning, to allow for maximum benefit. The initial results are usually apparent within 4-6 weeks however the healing process is ongoing and skin/scalp will continue to be stimulated resulting in a more overall youthful appearance with time.`,
           },
           {
-            question: 'WHAT ARE THE BENEFITS OF PRP?',
+            question: 'What are the benefits of PRP?',
             answer: `PRP stimulates elastin and collagen stimulation, resulting in tighter and smoother skin as well as reduction in the appearance of wrinkles and fine lines. In addition, it boosts collagen resulting in overall skin rejuvenation, a more youthful appearance and long lasting results. 
             
             PRP is natural and safe since it is using the natural elements of your own blood, without the addition of any foreign products.`,
           },
           {
-            question: 'HOW LONG DO RESULTS LAST?',
+            question: 'How long do results last?',
             answer: `Results typically last 12-18 months after a minimum of 3 treatments spaced about 4 weeks apart.`,
           },
         ],

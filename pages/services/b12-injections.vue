@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -122,11 +115,11 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS THE BENEFIT OF A VITAMIN B12 INJECTION?',
+            question: 'What is the benefit of a Vitamin B12 injection?',
             answer: `Vitamin B12 injection  helps your body use fat and carbohydrates for energy and make new protein. It is also important for normal blood, cells, and nerves. Aside from a boost in energy, it increases your metabolism resulting in weight loss as well.`,
           },
           {
-            question: 'WHAT ARE FAT LOSS INJECTIONS?',
+            question: 'What are Fat Loss injections?',
             answer: `Fat Loss injections, or MIC, are made up of vitamins and amino acids consisting of Methionine, Inositol and Choline. 
             
             Methionine helps in breaking down of fat resulting in decreased fat buildup in arteries. It also aids in liver detoxification. 
@@ -137,7 +130,7 @@ export default {
           },
           {
             question:
-              'WHO IS A GOOD CANDIDATE FOR VITAMIN B12 + FAT LOSS COMBO INJECTION?',
+              'Who is a good candidate for Vitamin B12 and Fat Loss injection?',
             answer: `A good candidate would be anyone desiring additional weight loss, including a decrease in cholesterol levels, a boost in energy, maintain healthy nerve impulses and aid in liver detoxification.`,
           },
         ],

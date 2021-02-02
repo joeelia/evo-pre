@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -119,15 +112,15 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS MICRONEEDLING?',
+            question: 'What is Microneedling?',
             answer: `Microneedling involves using a device that pricks the skin with tiny sterilized needles creating multiple small wounds. Our spa uses one of the only FDA approved microneedling devices.`,
           },
           {
-            question: 'WHAT ARE THE BENEFITS OF MICRONEEDLING?',
+            question: 'What are the benefits of microneedling?',
             answer: `Once the small wounds are created using the microneedling device, it stimulates your body to make more collagen and elastin, which heals your skin and gives an overall youthful appearance. In addition, it tightens the skin, reduces pore sizes, reduces fine lines and wrinkles as well as helps with pigmentation and uneven skin tone.`,
           },
           {
-            question: 'CAN I GET MICRONEEDLING WITHOUT PRP?',
+            question: 'Can I get Microneedling without PRP?',
             answer: `Absolutely. You have the option to do microneedling therapy on its own. We use a serum prior to gliding the microneedle device across your face. Once done, all you have to do is let the skin heal properly while using adequate sunscreen if stepping outdoors. Optimal results will be apparent within a few days to a week.`,
           },
         ],

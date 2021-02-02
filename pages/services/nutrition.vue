@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -78,7 +71,7 @@
           </div>
         </div>
       </div>
-      <div v-if="service.faqs" class="bg-gray-50">
+      <div v-if="service.faq" class="bg-gray-50">
         <!-- FAQ -->
         <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
           <h2 class="text-3xl font-extrabold text-gray-900 text-center">
@@ -102,7 +95,7 @@
           </div>
         </div>
       </div>
-      <LookingForMore class="pt-10" />
+      <LookingForMore />
     </div>
   </section>
 </template>

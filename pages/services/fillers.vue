@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -119,32 +112,16 @@ export default {
         h2: 'something',
         faqs: [
           {
-            question: 'WHAT IS HCG WEIGHT LOSS?',
-            answer: `HCG is a hormone produced by placenta during pregnancy.
-              
-              Depending on the desired weight loss, it can be used for 23 days or 35 days for up to 20-40lbs weight loss. Even though you are on a very low calorie diet, your appetite will be suppressed as a result of the hormone.
-              
-              This service comes with biweekly Vitamin B12, Vitamin B1-B6 and Fat Loss injections.`,
+            question: 'What are Dermal Fillers?',
+            answer: `Dermal Fillers are gel like substances, most of them made up of hyaluronic acid which is a naturally occurring component in our body. They are injected underneath the skin to restore lost volume or add additional volume to desired areas, as well as to smooth lines and enhance facial contours. `,
           },
           {
-            question: 'HOW LONG WILL THE RESULTS LAST?',
-            answer: `That depends on you. There is more than one phase to the diet,
-                  with the first phase consisting of a very low calorie diet,
-                  minimal exercise, avoiding certain types of food and staying
-                  adequately hydrated. Over the next phase, calories are
-                  gradually increased while still limiting certain products and
-                  adding them later on during the last phase.
-                  
-                  The whole point is not just a quick weight loss,
-                  but it is also lifestyle modification to allow for weight
-                  maintenance after the initial goal weight has been achieved.`,
+            question: 'What are the benefits of Dermal Fillers?',
+            answer: `Dermal Fillers  result in immediate enhancement to your look with little to no downtime. They can be used to fill in superficial as well as deep wrinkles, plump certain areas of the face and restore lost volume. The results are long lasting, usually ranging from 6-12 months.`,
           },
           {
-            question: 'IF I GAIN SOME OF THE WEIGHT BACK, WHAT ARE MY OPTIONS?',
-            answer: `You can do another round of HCG after a minimum of 6 week
-                  break. If you choose not to do so, our Registered Dietitian
-                  can help you get on an alternative track with monthly follow
-                  ups.`,
+            question: 'What areas can I get Fillers in?',
+            answer: `Fillers can be injected under the eyes, in the lips, cheeks, nasolabial folds, chin, jaw and hands.`,
           },
         ],
       },

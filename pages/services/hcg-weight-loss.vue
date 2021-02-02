@@ -20,13 +20,6 @@
               for market rate.
             </p> -->
             </div>
-            <div class="mt-10 w-full max-w-xs lg:mt-0">
-              <label
-                for="currency"
-                class="block text-base font-medium text-rose-300"
-                >{{ service.subtitle }}</label
-              >
-            </div>
           </div>
         </div>
       </div>
@@ -44,7 +37,7 @@
                 <h2
                   class="text-3xl font-extrabold tracking-tight text-gray-900"
                 >
-                  {{ service.h2 }}
+                  {{ service.subtitle }}
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
                   {{ service.description }}
@@ -120,7 +113,7 @@ export default {
         h2: 'Live A Healthy Lifestyle',
         faqs: [
           {
-            question: 'WHAT IS HCG WEIGHT LOSS?',
+            question: 'What is HCG Weight Loss?',
             answer: `HCG is a hormone produced by placenta during pregnancy.
               
               Depending on the desired weight loss, it can be used for 23 days or 35 days for up to 20-40lbs weight loss. Even though you are on a very low calorie diet, your appetite will be suppressed as a result of the hormone.
@@ -128,7 +121,7 @@ export default {
               This service comes with biweekly Vitamin B12, Vitamin B1-B6 and Fat Loss injections.`,
           },
           {
-            question: 'HOW LONG WILL THE RESULTS LAST?',
+            question: 'How long will the results last?',
             answer: `That depends on you. There is more than one phase to the diet,
                   with the first phase consisting of a very low calorie diet,
                   minimal exercise, avoiding certain types of food and staying
@@ -141,7 +134,7 @@ export default {
                   maintenance after the initial goal weight has been achieved.`,
           },
           {
-            question: 'IF I GAIN SOME OF THE WEIGHT BACK, WHAT ARE MY OPTIONS?',
+            question: 'If I gain some of the weight back, what are my options?',
             answer: `You can do another round of HCG after a minimum of 6 week
                   break. If you choose not to do so, our Registered Dietitian
                   can help you get on an alternative track with monthly follow

@@ -18,9 +18,8 @@
                 >Checkout our full services.</span
               >
             </h2>
-            <p class="mt-4 text-lg leading-6 text-orange-50">
-              Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-              Malesuada adipiscing sagittis vel nulla nec.
+            <p class="hidden mt-4 text-lg leading-6 text-orange-50">
+              Schdule a consulstation online.
             </p>
             <nuxt-link
               to="/book-now"
@@ -32,7 +31,7 @@
         <div class="-mt-6 aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
           <img
             class="transform translate-x-6 translate-y-6 rounded-md object-cover object-left-top sm:translate-x-16 lg:translate-y-20"
-            src="https://tailwindui.com/img/component-images/full-width-with-sidebar.jpg"
+            src="~/assets/images/looking-for-more.jpg"
             alt="App screenshot"
           />
         </div>
