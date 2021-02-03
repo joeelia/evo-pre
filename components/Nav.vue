@@ -1,4 +1,4 @@
-/* eslint-disable */
+<!-- prettier-ignore -->
 <template>
   <header>
     <div class="relative bg-white">
@@ -388,6 +388,7 @@ export default {
   },
   data() {
     return {
+      open: false,
       isFlyout: false,
       showMobileMenu: false,
       contactModal: false,
@@ -474,6 +475,9 @@ export default {
     },
     hideMobile(event) {
       this.showMobileMenu = false
+    },
+    hideMobile2(event) {
+      this.open = false
     },
   },
 }

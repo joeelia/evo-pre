@@ -1,6 +1,6 @@
 <template>
   <div class="s-bg">
-    <Nav />
+    <Nav2 />
     <Nuxt />
     <LightFooter />
   </div>
