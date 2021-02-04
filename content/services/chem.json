@@ -1,0 +1,15 @@
+{
+  "service": {
+    "title": "Chemical Peel For You",
+    "subtitle": "Lol Ok",
+    "image": "v1608494632/services/Service-Botox_df6up6.jpg",
+    "description": "yeah itsa e peerl",
+    "faqs": [
+      {
+        "question": "Testing?",
+        "answer": "Ok?"
+      }
+    ],
+    "faqJSON": ""
+  }
+}

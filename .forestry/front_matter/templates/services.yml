@@ -59,3 +59,5 @@ fields:
     label: faqJSON
     hidden: true
   label: Service
+pages:
+- content/services/chem.json
