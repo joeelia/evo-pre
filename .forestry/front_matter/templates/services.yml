@@ -1,4 +1,61 @@
 ---
 label: Services
 hide_body: false
-fields: []
+fields:
+- name: service
+  type: field_group
+  config: {}
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: subtitle
+    type: text
+    config:
+      required: false
+    label: Subtitle
+  - name: image
+    type: text
+    config:
+      required: false
+    label: Image
+  - name: description
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Description
+  - name: faqs
+    type: field_group_list
+    fields:
+    - name: question
+      type: text
+      config:
+        required: false
+      label: Question
+    - name: answer
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: false
+        schema:
+          format: markdown
+      label: Answer
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Faqs
+  - name: faqJSON
+    type: text
+    config:
+      required: false
+    label: faqJSON
+    hidden: true
+  label: Service

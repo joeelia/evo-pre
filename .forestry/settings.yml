@@ -9,7 +9,7 @@ sections:
   label: Services
   create: documents
   match: "**/*"
-  new_doc_ext: ".json"
+  new_doc_ext: json
   templates:
   - services
 upload_dir: uploads
