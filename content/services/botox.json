@@ -1,0 +1,23 @@
+{
+  "service": {
+    "title": "Botox",
+    "subtitle": "Wrinkle Reduction",
+    "image": "v1608494632/services/Service-Botox_df6up6.jpg",
+    "description": "Botox is one of the most well-known methods for warding off wrinkles and other signs of aging. It's a prescription medication that's injected into the muscles of the face. Botox works by stopping the muscle that it's injected into from contracting, so it appears relaxed and smooth.",
+    "faqs": [
+      {
+        "question": "What is Botox?",
+        "answer": "Botox is an injectable muscle relaxer, used to temporarily paralyze muscles resulting in wrinkle reduction as well as wrinkle prevention.  It can be used between the brows, on the forehead, around the eyes, under the eyes, bunny lines, on the jaw as well as the chin."
+      },
+      {
+        "question": "Who is a good candidate for Botox?",
+        "answer": "The best candidate for botox treatments are people who are overall healthy, without any neuromuscular diseases, who are not pregnant or nursing, and who are at least 18 years in age."
+      },
+      {
+        "question": "How long do results last?",
+        "answer": "Once injected, it takes about 2 weeks for optimal results that typically last between 3-6 months."
+      }
+    ],
+    "faqJSON": {}
+  }
+}
