@@ -1,0 +1,23 @@
+{
+  "service": {
+    "title": "Fillers",
+    "subtitle": "Facial Enhancement",
+    "image": "v1608494632/services/Service-Fillers_icqwao.jpg",
+    "description": "If you are concerned about aging or volume loss, ask us about hyaluronic acid fillers to fill in wrinkles and restore volume to areas where it is lost. They can be placed under the eyes, lips, nasolabial folds, cheeks, jaw/chin, and hands, which will give a  more youthful and refined appearance to your face.",
+    "faqs": [
+      {
+        "question": "What are Dermal Fillers?",
+        "answer": "Dermal Fillers are gel like substances, most of them made up of hyaluronic acid which is a naturally occurring component in our body. They are injected underneath the skin to restore lost volume or add additional volume to desired areas, as well as to smooth lines and enhance facial contours. "
+      },
+      {
+        "question": "What are the benefits of Dermal Fillers?",
+        "answer": "Dermal Fillers  result in immediate enhancement to your look with little to no downtime. They can be used to fill in superficial as well as deep wrinkles, plump certain areas of the face and restore lost volume. The results are long lasting, usually ranging from 6-12 months."
+      },
+      {
+        "question": "What areas can I get Fillers in?",
+        "answer": "Fillers can be injected under the eyes, in the lips, cheeks, nasolabial folds, chin, jaw and hands."
+      }
+    ],
+    "faqJSON": {}
+  }
+}

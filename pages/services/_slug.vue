@@ -100,46 +100,19 @@
   </section>
 </template>
 <script>
+// Importing array from local JSON file
 export default {
-  name: 'PRPScalp',
-  data() {
+  async asyncData({ $content, params }) {
+    const slug = params.slug || '/'
+    const page = await $content('services', slug).fetch()
+
     return {
-      service: {
-        title: 'PRP - Scalp',
-        subtitle: 'Hair Growth Stimulation',
-        image: 'v1608494633/services/Service-PRP_Hair_loss_rdfhul.jpg',
-        description:
-          'PRP treatment for hair involves injecting your own platelet rich plasma portion of the blood into your scalp which helps stimulate new hair follicles resulting in improved hair growth and texture.',
-        h2: 'something',
-        faqs: [
-          {
-            question: 'What is PRP?',
-            answer: `PRP or platelet rich plasma, uses your own blood that is rich in platelets, which are essential to healing and contain growth factors, to stimulate new and healthy skin cells.
-            
-            During PRP facial hair stimulation, blood is drawn from you and spun in a centrifuge which separates the platelet rich portion of the blood from other components, allowing for the most beneficial components of the blood to be used for skin rejuvenation. 
-            
-            When the PRP is injected into the desired parts of the face that needs replenishing, or into the scalp for hair stimulation, the renewal process begins. The process is also sped up since these concentrated platelets are full of growing and healing factors, which help repair and attract important stem cells needed to heal the damaged skin and tissue. 
-            
-            The injection areas can be targeted, such as under the eyes, nasolabial folds, cheeks, lips, jawline and neck or specific scalp areas with noticeable hair thinning, to allow for maximum benefit. The initial results are usually apparent within 4-6 weeks however the healing process is ongoing and skin/scalp will continue to be stimulated resulting in a more overall youthful appearance with time.`,
-          },
-          {
-            question: 'What are the benefits of PRP?',
-            answer: `PRP stimulates elastin and collagen stimulation, resulting in tighter and smoother skin as well as reduction in the appearance of wrinkles and fine lines. In addition, it boosts collagen resulting in overall skin rejuvenation, a more youthful appearance and long lasting results. 
-            
-            PRP is natural and safe since it is using the natural elements of your own blood, without the addition of any foreign products.`,
-          },
-          {
-            question: 'How long do results last?',
-            answer: `Results typically last 12-18 months after a minimum of 3 treatments spaced about 4 weeks apart.`,
-          },
-        ],
-      },
-      faqJSON: {},
+      service: page.service,
     }
   },
   head() {
     return {
-      script: [{ type: 'application/ld+json', json: this.faqJSON }],
+      script: [{ type: 'application/ld+json', json: this.service.faqJSON }],
     }
   },
   created() {

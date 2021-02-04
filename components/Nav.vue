@@ -1,287 +1,66 @@
-/* eslint-disable */
+<!-- prettier-ignore -->
 <template>
   <header>
-    <div class="relative bg-white">
-      <div
-        class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
-      >
-        <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#">
-            <span class="sr-only">EVO Body Image</span>
-            <Logo />
-          </a>
-        </div>
-        <div class="md:hidden whitespace-no-wrap">
-          <nuxt-link
-            v-if="$route.fullPath.indexOf('book-now') != true"
-            to="/book-now"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
-          >
-            Book Now
-          </nuxt-link>
-        </div>
-        <div class="-mr-2 -my-2 md:hidden">
-          <button
-            type="button"
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-            @click.prevent="showMobileMenu = true"
-          >
-            <span class="sr-only">Open menu</span>
-            <!-- Heroicon name: menu -->
-            <svg
-              class="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              aria-hidden="true"
+    <div class="z-40 sticky top-0 antialiased bg-gray-100 dark-mode:bg-gray-900">
+      <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        <div v-click-outside="hideNavs" class="flex flex-col max-w-screen-xl px-0 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+          <div class="flex flex-row items-center justify-between p-4">
+            <Logo id="logo" />
+            <nuxt-link
+              v-if="$route.fullPath.indexOf('/book-now')"
+              to="/book-now"
+              class="md:hidden whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </div>
-        <nav class="hidden md:flex space-x-10">
-          <div class="relative">
-            <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
-            <button
-              class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-              @click="toggleFlyout"
-              type="button"
-            >
-              <span>Services</span>
-              <!--
-                Heroicon name: chevron-down
-
-                Item active: "text-gray-600", Item inactive: "text-gray-400"
-              -->
-              <svg
-                class="ml-2 h-5 w-5 text-gray-400 group-hover:text-gray-500"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
+              Book Now
+            </nuxt-link>
+            <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="openMobileNav = !openMobileNav">
+              <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                <path v-show="!openMobileNav" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                <path v-show="openMobileNav" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
               </svg>
             </button>
-
-            <!--
-              'Solutions' flyout menu, show/hide based on flyout menu state.
-
-              Entering: "transition ease-out duration-200"
-                From: "opacity-0 translate-y-1"
-                To: "opacity-100 translate-y-0"
-              Leaving: "transition ease-in duration-150"
-                From: "opacity-100 translate-y-0"
-                To: "opacity-0 translate-y-1"
-            -->
-            <transition
-              enter-active-class="transition ease-out duration-200"
-              enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 translate-y-1"
-            >
-              <div
-                v-show="isFlyout"
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
-                @click="toggleFlyout"
-              >
-                <div
-                  class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
-                >
-                  <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
-                  >
-                    <nuxt-link
+          </div>
+          <nav :class="{flex: openMobileNav, hidden: !openMobileNav}" class="px-2 flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+            <nuxt-link to="/pricing" class="border-2 border-pink-400 md:border-0 md:border-transparent px-4 py-4 md:py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">Pricing</nuxt-link>
+            <span class="border-2 border-pink-400 md:border-0 md:border-transparent px-4 py-4 md:py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer" @click="contactModalEmit(true)">Contact</span>
+            <div class="relative">
+              <button :class="{'bg-gray-200': !$route.fullPath.indexOf('/services')}" @click="openSubNav = !openSubNav" class="border-2 border-pink-400 md:border-0 md:border-transparent flex flex-row text-gray-900 items-center w-full px-4 py-4 md:py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                <span>Services</span>
+                <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openSubNav, 'rotate-0': !openSubNav}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              </button>
+              <div v-show="openSubNav" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="shadow-2xl absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
+                <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-2xl dark-mode:bg-gray-700">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                     <nuxt-link
                       v-for="(service, i) in services"
                       :key="i"
                       :to="service.path"
-                      class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     >
-                      <div
-                        class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 text-white sm:h-12 sm:w-12"
-                      >
-                        <!-- Heroicon name: inbox -->
+                    <div class="bg-teal-500 text-white rounded-lg p-3">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
                       </div>
-                      <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">
-                          {{ service.title }}
-                        </p>
-                        <p class="mt-1 text-sm text-gray-500">
-                          {{ service.subtitle }}
-                        </p>
+                      <div class="ml-3">
+                        <p class="font-semibold">{{ service.title }}</p>
+                        <p class="text-sm">Easy {{ service.subtitle }}</p>
                       </div>
                     </nuxt-link>
                   </div>
                 </div>
               </div>
-            </transition>
-          </div>
-
-          <nuxt-link
-            to="/pricing"
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            Pricing
-          </nuxt-link>
-          <!-- <a
-            href="#"
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            Partners
-          </a>
-          <a
-            href="#"
-            class="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            Company
-          </a> -->
-        </nav>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <nuxt-link
-            v-if="$route.fullPath.indexOf('book-now') != true"
-            to="/book-now"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
-          >
-            Book Now
-          </nuxt-link>
+            </div>
+              <nuxt-link
+              v-if="$route.fullPath.indexOf('/book-now')"
+              to="/book-now"
+              class="ml-10 hidden md:inline-flex whitespace-nowrap items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
+            >
+              Book Now
+            </nuxt-link>  
+          </nav>
         </div>
       </div>
-
-      <!--
-        Mobile menu, show/hide based on mobile menu state.
-
-        Entering: "duration-200 ease-out"
-          From: "opacity-0 scale-95"
-          To: "opacity-100 scale-100"
-        Leaving: "duration-100 ease-in"
-          From: "opacity-100 scale-100"
-          To: "opacity-0 scale-95"
-      -->
-      <transition
-        enter-active-class="duration-200 ease-out"
-        enter-from-class="opacity-0 scale-95"
-        enter-to-class="opacity-100 scale-100"
-        leave-active-class="duration-100 ease-in"
-        leave-from-class="opacity-100 scale-100"
-        leave-to-class="opacity-0 scale-95"
-      >
-        <div
-          v-show="showMobileMenu"
-          class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
-        >
-          <div
-            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
-          >
-            <div class="pt-5 pb-6 px-5">
-              <div class="flex items-center justify-between">
-                <div>
-                  <Logo />
-                </div>
-                <div class="-mr-2">
-                  <button
-                    type="button"
-                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                    @click="showMobileMenu = false"
-                  >
-                    <span class="sr-only">Close menu</span>
-                    <!-- Heroicon name: x -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="mt-6">
-                <nav
-                  @click.prevent="showMobileMenu = false"
-                  class="grid grid-cols-2 gap-7"
-                >
-                  <nuxt-link
-                    v-for="(service, i) in services"
-                    :key="i"
-                    :to="service.path"
-                    class="text-left whitespace-no-wrap -m-3 p-3 rounded-lg hover:bg-pink-50 border-2 border-purple-500 hover:border-transparent"
-                  >
-                    <div
-                      class="-ml-4 py-2 px-4 text-base font-medium text-purple-900"
-                    >
-                      {{ service.title }}
-                    </div>
-                  </nuxt-link>
-                </nav>
-              </div>
-            </div>
-            <div class="py-6 px-5">
-              <div
-                class="grid grid-cols-2 gap-4"
-                @click="showMobileMenu = false"
-              >
-                <nuxt-link
-                  to="/pricing"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Pricing
-                </nuxt-link>
-
-                <!-- <a
-                  href="#"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Partners
-                </a>
-
-                <a
-                  href="#"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Company
-                </a> -->
-              </div>
-              <div @click.prevent="showMobileMenu = false" class="mt-6">
-                <nuxt-link
-                  to="/book-now"
-                  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
-                >
-                  Book Now
-                </nuxt-link>
-                <p
-                  class="mt-6 text-center text-base font-medium text-gray-500 cursor-pointer"
-                >
-                  <span @click="contactModalEmit(true)" class="text-gray-900">
-                    Contact
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </transition>
     </div>
-    <div v-if="contactModal" class="fixed inset-0 z-10 overflow-y-auto">
+      <div v-if="contactModal" class="fixed inset-0 z-50 overflow-y-auto">
       <div
         class="flex items-end justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
       >
@@ -311,6 +90,7 @@
         To: "opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
     -->
         <div
+          v-click-outside="hideContact"
           class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6"
           role="dialog"
           aria-modal="true"
@@ -343,22 +123,27 @@
               >
                 Contact Us!
               </h3>
-              <div class="mt-2 mb-40">
+              <div class="mt-2 mb-40 space-y-6">
                 <a
-                  type="button"
-                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-300 bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
                   @click="gaEvent('contact_modal_sms')"
                   href="sms:+12485952363&body=Hey EVO Body Image!"
                 >
                   Text Us
                 </a>
                 <a
-                  type="button"
-                  class="inline-flex justify-center w-full px-4 py-2 mt-10 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-300 bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
                   @click="gaEvent('contact_modal_call_spa')"
                   href="tel:+(248) 878-6639"
                 >
                   Call the Spa
+                </a>
+                 <a
+                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                  @click="gaEvent('contact_modal_email')"
+                  href="mailto:hello@evobodyimage.com?subject = Hey EVO Body Image!!"
+                >
+                  Email Us
                 </a>
               </div>
             </div>
@@ -388,8 +173,8 @@ export default {
   },
   data() {
     return {
-      isFlyout: false,
-      showMobileMenu: false,
+      openMobileNav: false,
+      openSubNav: false,
       contactModal: false,
       services: [
         {
@@ -449,12 +234,13 @@ export default {
     this.$nuxt.$on('contactModal', (value) => {
       this.contactModal = value
     })
+    this.$nuxt.$on('showNav', (value) => {
+      if (value === false) {
+        this.hideNavs()
+      }
+    })
   },
   methods: {
-    // need annotation due to `this` in return type
-    toggleFlyout() {
-      this.isFlyout = !this.isFlyout
-    },
     closeModal(event) {
       this.contactModal = false
       this.gaEvent('contact_modal_close')
@@ -464,6 +250,7 @@ export default {
         event: 'gaEvent',
         event_name: event,
       })
+      this.hideContact()
     },
     contactModalEmit(value) {
       this.$nuxt.$emit('contactModal', value)
@@ -472,9 +259,20 @@ export default {
         event_name: 'contact_modal_open',
       })
     },
-    hideMobile(event) {
-      this.showMobileMenu = false
+    hideContact(event) {
+      this.contactModal = false
+    },
+    hideNavs(event) {
+      this.openMobileNav = false
+      this.openSubNav = false
     },
   },
 }
 </script>
+
+<style scoped>
+.nuxt-link-exact-active:not(#logo) {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+</style>

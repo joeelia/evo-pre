@@ -4,6 +4,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-target
    */
   target: 'static',
+  fetchOnServer: false,
   /*
    ** Headers of the page
    ** See https://nuxtjs.org/api/configuration-head
@@ -39,6 +40,7 @@ export default {
     { src: '~/plugins/date-picker.js', mode: 'client' },
     { src: '~/plugins/aos.client', mode: 'client' },
     { src: '~/plugins/nl2br.client', mode: 'client' },
+    { src: '~/plugins/route.client', mode: 'client' },
   ],
   /*
    ** Auto import components
@@ -53,6 +55,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/content',
   ],
   tailwindcss: {
     exposeConfig: true,
