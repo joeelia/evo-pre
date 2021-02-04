@@ -53,11 +53,9 @@ fields:
       labelField: 
     label: Faqs
   - name: faqJSON
-    type: text
-    config:
-      required: false
+    type: field_group
+    config: {}
     label: faqJSON
-    hidden: true
   label: Service
 pages:
 - content/services/chem.json
