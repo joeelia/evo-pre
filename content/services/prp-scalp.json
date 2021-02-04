@@ -7,7 +7,7 @@
     "faqs": [
       {
         "question": "What is PRP?",
-        "answer": "PRP or platelet rich plasma, uses your own blood that is rich in platelets, which are essential to healing and contain growth factors, to stimulate new and healthy skin cells.\\ During PRP facial hair stimulation, blood is drawn from you and spun in a centrifuge which separates the platelet rich portion of the blood from other components, allowing for the most beneficial components of the blood to be used for skin rejuvenation. \\When the PRP is injected into the desired parts of the face that needs replenishing, or into the scalp for hair stimulation, the renewal process begins. The process is also sped up since these concentrated platelets are full of growing and healing factors, which help repair and attract important stem cells needed to heal the damaged skin and tissue.\\ The injection areas can be targeted, such as under the eyes, nasolabial folds, cheeks, lips, jawline and neck or specific scalp areas with noticeable hair thinning, to allow for maximum benefit. The initial results are usually apparent within 4-6 weeks however the healing process is ongoing and skin/scalp will continue to be stimulated resulting in a more overall youthful appearance with time."
+        "answer": "PRP or platelet rich plasma, uses your own blood that is rich in platelets, which are essential to healing and contain growth factors, to stimulate new and healthy skin cells.\n\nDuring PRP facial hair stimulation, blood is drawn from you and spun in a centrifuge which separates the platelet rich portion of the blood from other components, allowing for the most beneficial components of the blood to be used for skin rejuvenation. \\When the PRP is injected into the desired parts of the face that needs replenishing, or into the scalp for hair stimulation, the renewal process begins. The process is also sped up since these concentrated platelets are full of growing and healing factors, which help repair and attract important stem cells needed to heal the damaged skin and tissue.\\ The injection areas can be targeted, such as under the eyes, nasolabial folds, cheeks, lips, jawline and neck or specific scalp areas with noticeable hair thinning, to allow for maximum benefit. The initial results are usually apparent within 4-6 weeks however the healing process is ongoing and skin/scalp will continue to be stimulated resulting in a more overall youthful appearance with time."
       },
       {
         "question": "What are the benefits of PRP?",
@@ -18,6 +18,7 @@
         "answer": "Results typically last 12-18 months after a minimum of 3 treatments spaced about 4 weeks apart."
       }
     ],
-    "faqJSON": {}
+    "faqJSON": {
+    }
   }
 }
