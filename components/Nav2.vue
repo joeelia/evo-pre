@@ -124,20 +124,20 @@
                 Contact Us!
               </h3>
               <div class="mt-2 mb-40">
-                <span
-                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-300 bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                <a
+                  class="inline-flex justify-center w-full px-4 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
                   @click="gaEvent('contact_modal_sms')"
                   href="sms:+12485952363&body=Hey EVO Body Image!"
                 >
                   Text Us
-                </span>
-                <span
-                  class="inline-flex justify-center w-full px-4 py-2 mt-10 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-green-300 bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
+                </a>
+                <a
+                  class="inline-flex justify-center w-full px-4 py-2 mt-10 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent shadow-sm bg-red-saroki hover:bg-red-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo sm:text-sm sm:leading-5"
                   @click="gaEvent('contact_modal_call_spa')"
                   href="tel:+(248) 878-6639"
                 >
                   Call the Spa
-                </span>
+                </a>
               </div>
             </div>
           </div>
