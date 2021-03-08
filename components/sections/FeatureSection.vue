@@ -20,7 +20,7 @@
             class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-black rounded"
           ></span>
           <nuxt-link
-            to="/book-now"
+            to="/pricing"
             class="relative inline-block w-full h-full px-5 py-3 text-lg font-bold transition duration-100 bg-white border-2 border-black rounded fold-bold hover:bg-yellow-500 hover:text-white"
             >Book Now</nuxt-link
           >

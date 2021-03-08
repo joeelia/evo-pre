@@ -4,7 +4,7 @@
       <div class="bg-gradient-to-b from-pink-50 via-white to-white">
         <!-- Header section with select menu -->
         <div
-          class="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl"
+          class="max-w-2xl px-4 py-16 mx-auto sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl"
         >
           <div
             class="px-0 sm:px-4 lg:px-0 lg:flex lg:justify-between lg:items-center"
@@ -29,7 +29,7 @@
           class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24"
         >
           <div
-            class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0"
+            class="max-w-xl px-4 mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0"
           >
             <div>
               <div></div>
@@ -44,8 +44,8 @@
                 </p>
                 <div class="mt-6">
                   <nuxt-link
-                    to="/book-now"
-                    class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
+                    to="/pricing"
+                    class="inline-flex items-center justify-center px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm whitespace-nowrap bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
                   >
                     Book Now
                   </nuxt-link>
@@ -53,7 +53,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-12 sm:mt-16 lg:mt-0 overflow-x-hidden">
+          <div class="mt-12 overflow-x-hidden sm:mt-16 lg:mt-0">
             <div
               class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full"
             >
@@ -73,8 +73,8 @@
       </div>
       <div v-if="service.faq" class="bg-gray-50">
         <!-- FAQ -->
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-gray-900 text-center">
+        <div class="px-4 py-16 mx-auto max-w-7xl sm:py-24 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-center text-gray-900">
             Frequently asked questions
           </h2>
           <div class="mt-12">
@@ -82,7 +82,7 @@
               class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3"
             >
               <div v-for="(faq, i) in service.faqs" :key="i" class="space-y-2">
-                <dt class="text-lg leading-6 font-medium text-gray-900">
+                <dt class="text-lg font-medium leading-6 text-gray-900">
                   {{ faq.question }}
                 </dt>
                 <dd

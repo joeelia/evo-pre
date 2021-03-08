@@ -39,7 +39,7 @@
               your perfect imperfections. Schedule an appointment now.
             </p>
             <nuxt-link
-              to="/book-now"
+              to="/pricing"
               class="px-1 pb-1 font-semibold uppercase transition-colors duration-500 border-b-4 border-gray-800 text-md hover:border-green-700 hover:text-white"
               >Learn more</nuxt-link
             >

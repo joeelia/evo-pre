@@ -1,15 +1,15 @@
 <!-- prettier-ignore -->
 <template>
   <header>
-    <div class="z-40 sticky top-0 antialiased bg-gray-100 dark-mode:bg-gray-900">
+    <div class="sticky top-0 z-40 antialiased bg-gray-100 dark-mode:bg-gray-900">
       <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div v-click-outside="hideNavs" class="flex flex-col max-w-screen-xl px-0 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           <div class="flex flex-row items-center justify-between p-4">
             <Logo id="logo" />
             <nuxt-link
-              v-if="$route.fullPath.indexOf('/book-now')"
-              to="/book-now"
-              class="md:hidden whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
+              v-if="$route.fullPath.indexOf('/pricing')"
+              to="/pricing"
+              class="inline-flex items-center justify-center px-4 py-2 text-base font-medium text-white border border-transparent rounded-md shadow-sm md:hidden whitespace-nowrap bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
             >
               Book Now
             </nuxt-link>
@@ -20,25 +20,25 @@
               </svg>
             </button>
           </div>
-          <nav :class="{flex: openMobileNav, hidden: !openMobileNav}" class="px-2 flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-            <nuxt-link to="/pricing" class="border-2 border-pink-400 md:border-0 md:border-transparent px-4 py-4 md:py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer">Pricing</nuxt-link>
-            <span class="border-2 border-pink-400 md:border-0 md:border-transparent px-4 py-4 md:py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer" @click="contactModalEmit(true)">Contact</span>
+          <nav :class="{flex: openMobileNav, hidden: !openMobileNav}" class="flex-col flex-grow px-2 pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+            <nuxt-link to="/pricing" class="px-4 py-4 mt-2 text-sm font-semibold bg-transparent border-2 border-pink-400 rounded-lg cursor-pointer md:border-0 md:border-transparent md:py-2 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">Pricing</nuxt-link>
+            <span class="px-4 py-4 mt-2 text-sm font-semibold bg-transparent border-2 border-pink-400 rounded-lg cursor-pointer md:border-0 md:border-transparent md:py-2 dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" @click="contactModalEmit(true)">Contact</span>
             <div class="relative">
-              <button :class="{'bg-gray-200': !$route.fullPath.indexOf('/services')}" @click="openSubNav = !openSubNav" class="border-2 border-pink-400 md:border-0 md:border-transparent flex flex-row text-gray-900 items-center w-full px-4 py-4 md:py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+              <button :class="{'bg-gray-200': !$route.fullPath.indexOf('/services')}" @click="openSubNav = !openSubNav" class="flex flex-row items-center w-full px-4 py-4 mt-2 text-sm font-semibold text-left text-gray-900 bg-transparent border-2 border-pink-400 rounded-lg md:border-0 md:border-transparent md:py-2 dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                 <span>Services</span>
                 <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': openSubNav, 'rotate-0': !openSubNav}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
               </button>
-              <div v-show="openSubNav" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="shadow-2xl absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right">
+              <div v-show="openSubNav" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right shadow-2xl md:max-w-screen-sm md:w-screen">
                 <div class="px-2 pt-2 pb-4 bg-white rounded-md shadow-2xl dark-mode:bg-gray-700">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
                      <nuxt-link
                       v-for="(service, i) in services"
                       :key="i"
                       :to="service.path"
-                      class="flex row items-start rounded-lg bg-transparent p-2 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                      class="flex items-start p-2 bg-transparent rounded-lg row dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     >
-                    <div class="bg-teal-500 text-white rounded-lg p-3">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="md:h-6 md:w-6 h-4 w-4"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                    <div class="p-3 text-white bg-teal-500 rounded-lg">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-4 h-4 md:h-6 md:w-6"><path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
                       </div>
                       <div class="ml-3">
                         <p class="font-semibold">{{ service.title }}</p>
@@ -50,9 +50,9 @@
               </div>
             </div>
               <nuxt-link
-              v-if="$route.fullPath.indexOf('/book-now')"
-              to="/book-now"
-              class="ml-10 hidden md:inline-flex whitespace-nowrap items-center justify-center px-4 py-1 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
+              v-if="$route.fullPath.indexOf('/pricing')"
+              to="/pricing"
+              class="items-center justify-center hidden px-4 py-1 ml-10 text-base font-medium text-white border border-transparent rounded-md shadow-sm md:inline-flex whitespace-nowrap bg-gradient-to-r from-orange-500 to-pink-500 hover:to-pink-600"
             >
               Book Now
             </nuxt-link>  
