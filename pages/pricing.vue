@@ -141,7 +141,7 @@ export default {
           description:
             'HCG is a hormone that results in quick and effective weight loss while being on a very low calorie diet (while not getting hungry). It can be given via injection under the skin or taken by mouth. We offer a 23 day program and a 40 day program depending on the amount of desired weight loss. This service also comes with Vitamin B12 and MIC (aids in fat loss/ enhance metabolism) injections, as well as a simple to follow diet plan.',
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3854643',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854643',
         },
         {
           title: 'PRP - Face',
@@ -150,7 +150,7 @@ export default {
           image: 'v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
           description: `PRP is a concentration of platelets in the blood that are crucial to wound healing. When used for skin rejuvenation or in the treatment of hair loss, it releases growth factors into the skin to expedite the body's repair process and stimulate new collagen and elastin production. This means basically using your own body to heal yourself and look younger.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3813854',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3813854',
         },
         {
           title: 'PRP Face/Hair Microneedling With Injections',
@@ -159,7 +159,7 @@ export default {
           image: 'v1608494633/services/Service-PRP_Face_ywkdfy.jpg',
           description: `PRP is a concentration of platelets in the blood that are crucial to wound healing. When used for skin rejuvenation or in the treatment of hair loss, it releases growth factors into the skin to expedite the body's repair process and stimulate new collagen and elastin production. This means basically using your own body to heal yourself and look younger.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3813856',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3813856',
         },
         {
           title: 'Microneedling',
@@ -168,7 +168,7 @@ export default {
           image: 'v1608494632/services/Service-Microneedling_hva9rw.jpg',
           description: `Microneedling includes using a microneedle to prick the skin, which increases collagen production resulting in smoother, firmer, and more toned skin.  It is used with a serum specific to suit your needs. `,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3398698',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854640',
         },
         {
           title: 'Botox',
@@ -177,7 +177,7 @@ export default {
           image: 'v1608494632/services/Service-Botox_df6up6.jpg',
           description: `Botox is one of the most well-known methods for warding off wrinkles and other signs of aging. It's a prescription medication that's injected into the muscles of the face. Botox works by stopping the muscle that it's injected into from contracting, so it appears relaxed and smooth.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3811869',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854638',
         },
         {
           title: 'Fillers',
@@ -186,7 +186,7 @@ export default {
           image: 'v1608494632/services/Service-Fillers_icqwao.jpg',
           description: `If you are concerned about aging or volume loss, ask us about hyaluronic acid fillers to fill in wrinkles and restore volume to areas where it is lost. They can be placed under the eyes, lips, nasolabial folds, cheeks, jaw/chin, and hands, which will give a  more youthful and refined appearance to your face.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3515618',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854639',
         },
         {
           title: 'Cheek Fillers',
@@ -195,7 +195,7 @@ export default {
           image: 'v1608494632/services/Service-Fillers_icqwao.jpg',
           description: `If you are concerned about aging or volume loss, ask us about hyaluronic acid fillers to fill in wrinkles and restore volume to areas where it is lost. They can be placed under the eyes, lips, nasolabial folds, cheeks, jaw/chin, and hands, which will give a  more youthful and refined appearance to your face.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3827800',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854639',
         },
         {
           title: 'Under Eye Fillers',
@@ -204,7 +204,7 @@ export default {
           image: 'v1608494632/services/Service-Fillers_icqwao.jpg',
           description: `If you are concerned about aging or volume loss, ask us about hyaluronic acid fillers to fill in wrinkles and restore volume to areas where it is lost. They can be placed under the eyes, lips, nasolabial folds, cheeks, jaw/chin, and hands, which will give a  more youthful and refined appearance to your face.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3827798',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854639',
         },
         {
           title: 'B12 + Fat Burning Injection Combo',
@@ -217,7 +217,7 @@ export default {
           injections helps break down of stubborn
           fat in the body, aiding in additional weight loss.`,
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3846421',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3846421',
         },
         {
           title: 'PRP - Scalp',
@@ -227,7 +227,7 @@ export default {
           description:
             'PRP treatment for hair involves injecting your own platelet rich plasma portion of the blood into your scalp which helps stimulate new hair follicles resulting in improved hair growth and texture.',
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3813852',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3813852',
         },
         {
           title: 'Nutrition',
@@ -237,7 +237,7 @@ export default {
           description:
             "Dietitian supervised review of medical history, food habits, preferences, food security/availability, dietary practices, feeding skills, eating problems, and an analysis of biochemical and anthropometric variables- including the person's height, weight, and fat content of the body. This information is used to come up with a personalized diet plan, with optional follow-ups.",
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3854641',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854641',
         },
         {
           title: 'Chemical Peel',
@@ -248,7 +248,7 @@ export default {
           description:
             'A medical grade chemical peel will help remove dead skin cells and induce collagen, remove sun and age spots, decrease the appearance of fine lines and wrinkles, brighten the complexion and make the skin smoother.',
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3854642',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854642',
         },
         {
           title: 'Food Sensitivity and Inflammation Diet Therapy',
@@ -257,7 +257,7 @@ export default {
           description:
             'MRT lab test identifies inflammatory responses to foods and food chemicals. It will be used to create a highly effective anti-inflammatory eating plan to provide quick and lasting relief for IBS, migraines, fibromyalgia, and other chronic health problems.',
           link:
-            'https://go.booker.com/location/ThisGirlLori/service-menu/add-more/3854641',
+            'https://go.booker.com/location/ThisGirlLori/detail-summary/3854641',
         },
       ],
     }
